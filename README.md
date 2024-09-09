@@ -28,7 +28,23 @@ If Git is not already installed on your system, follow these steps to install it
      ```
      If Git is not installed, it will prompt you to install it via Xcode Command Line Tools. Follow the prompts.
 
-### 2. Clone the repository
+### 2. Install Node.js and npm
+
+If Node.js is not installed on your system, follow these steps to install it:
+
+- **Windows and Mac**:
+  1. Download Node.js from the official website: [https://nodejs.org/](https://nodejs.org/).
+  2. Choose the **LTS version** (recommended for stability).
+  3. Run the installer and follow the setup instructions. Make sure to enable the option to add Node.js to the system’s PATH.
+  4. After installation, verify that Node.js and npm are installed correctly by running the following commands in PowerShell (Windows) or Terminal (Mac):
+
+     ```bash
+     node -v
+     npm -v
+     ```
+     You should see the version numbers of both Node.js and npm.
+
+### 3. Clone the repository
 
 Once Git is installed, clone the repository to your local machine:
 
@@ -36,7 +52,7 @@ Once Git is installed, clone the repository to your local machine:
 git clone https://github.com/Theory-Communication-Design/aapex-2024.git
 ```
 
-### 3. Navigate to the project directory
+### 4. Navigate to the project directory
 
 Move into the project directory after cloning:
 
@@ -44,7 +60,7 @@ Move into the project directory after cloning:
 cd aapex-2024
 ```
 
-### 4. Install dependencies
+### 5. Install dependencies
 
 Install the required packages and dependencies for the project:
 
@@ -56,7 +72,7 @@ yarn install
 pnpm install
 ```
 
-### 5. Run the development server
+### 6. Run the development server
 
 Once the dependencies are installed, you can start the development server:
 
