@@ -6,15 +6,37 @@ This is a [Next.js](https://nextjs.org/) project for the AAPEX 2024 event, boots
 
 To open this project and run it locally, follow the instructions below:
 
-### 1. Clone the repository
+### 1. Install Git
 
-First, you need to clone the repository to your local machine:
+If Git is not already installed on your system, follow these steps to install it:
+
+- **Windows**:
+  1. Download Git for Windows from the official website: [https://git-scm.com/](https://git-scm.com/).
+  2. Run the installer and follow the instructions.
+  3. **Ensure you select the option to "Add Git to PATH"** during installation so that Git can be used in PowerShell or Command Prompt.
+  4. Once installed, open PowerShell or Command Prompt and verify Git is working by running:
+
+     ```bash
+     git --version
+     ```
+
+- **Mac**:
+  1. Open the Terminal and run:
+
+     ```bash
+     git --version
+     ```
+     If Git is not installed, it will prompt you to install it via Xcode Command Line Tools. Follow the prompts.
+
+### 2. Clone the repository
+
+Once Git is installed, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/Theory-Communication-Design/aapex-2024.git
 ```
 
-### 2. Navigate to the project directory
+### 3. Navigate to the project directory
 
 Move into the project directory after cloning:
 
@@ -22,7 +44,7 @@ Move into the project directory after cloning:
 cd aapex-2024
 ```
 
-### 3. Install dependencies
+### 4. Install dependencies
 
 Install the required packages and dependencies for the project:
 
@@ -34,7 +56,7 @@ yarn install
 pnpm install
 ```
 
-### 4. Run the development server
+### 5. Run the development server
 
 Once the dependencies are installed, you can start the development server:
 
