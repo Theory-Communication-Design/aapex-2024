@@ -66,9 +66,13 @@ Install the required packages and dependencies for the project:
 
 ```bash
 npm install
-# or
+```
+or
+```bash
 yarn install
-# or
+```
+or
+```bash
 pnpm install
 ```
 
@@ -78,9 +82,13 @@ Once the dependencies are installed, you can start the development server:
 
 ```bash
 npm run dev
-# or
+```
+or
+```bash
 yarn dev
-# or
+```
+or
+```bash
 pnpm dev
 ```
 
