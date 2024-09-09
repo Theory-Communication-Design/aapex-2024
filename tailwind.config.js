@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'emprint': ['EMprintRegular', 'sans-serif'],
-        'emprintBold': ['EMprintBold', 'sans-serif'],
-        'emprintSemiBold': ['EMprintSemiBold', 'sans-serif'],
+        emprint: ['EMprintRegular', 'sans-serif'],
+        emprintBold: ['EMprintBold', 'sans-serif'],
+        emprintSemiBold: ['EMprintSemiBold', 'sans-serif'],
       },
     },
   },
