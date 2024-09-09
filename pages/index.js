@@ -14,7 +14,6 @@ export default function Home() {
 
       <button onClick={() => showSection('section1')}>Show Section 1 (Text)</button>
       <button onClick={() => showSection('section2')}>Show Section 2 (Video 1)</button>
-      <button onClick={() => showSection('section3')}>Show Section 3 (Video 2)</button>
 
       {activeSection === 'section1' && (
         <div>
@@ -28,16 +27,6 @@ export default function Home() {
           <h2>Section 2: Video Player 1</h2>
           <video controls width="600">
             <source src="/videos/example.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      )}
-
-      {activeSection === 'section3' && (
-        <div>
-          <h2>Section 3: Video Player 2</h2>
-          <video controls width="600">
-            <source src="/videos/video2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
