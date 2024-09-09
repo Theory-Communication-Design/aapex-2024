@@ -1,36 +1,41 @@
-import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+const buttonData = [
+  { text: 'HAGERTY', logo: '/button-logo1.png', link: '/hagerty' },
+  { text: 'HOT WHEELS', logo: '/button-logo2.png', link: '/hotwheels' },
+  { text: 'OEM', logo: '/button-logo3.png', link: '/oem' },
+  { text: 'RED BULL RACING', logo: '/button-logo4.png', link: '/redbullracing' },
+  { text: 'ROCKET LEAGUE', logo: '/button-logo5.png', link: '/rocketleague' },
+  { text: 'STEER', logo: '/button-logo6.png', link: '/steer' },
+  { text: 'XOVERLAND', logo: '/button-logo7.png', link: '/xoverland' },
+  { text: 'MOBIL 1 PRODUCTS', logo: '/button-logo8.png', link: '/products' },
+];
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState('section1');
-
-  const showSection = (section) => {
-    setActiveSection(section);
-  };
-
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Interactive Page with Next.js</h1>
-      <p>Click the buttons below to show different content or videos:</p>
+    <div className="flex flex-col min-h-screen">
+      {/* Top Bar */}
+      <div className="bg-white h-16 flex justify-center items-center w-full shadow-md">
+        <Image src="/logo.png" alt="Logo" width={100} height={50} />
+      </div>
 
-      <button onClick={() => showSection('section1')}>Show Section 1 (Text)</button>
-      <button onClick={() => showSection('section2')}>Show Section 2 (Video 1)</button>
-
-      {activeSection === 'section1' && (
-        <div>
-          <h2>Section 1: Some Text Content</h2>
-          <p>This is some sample text content. You can change what’s displayed by clicking the buttons above.</p>
+      {/* Content Section */}
+      <div className="flex-grow flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url(/bg.png)' }}>
+        <p className="text-white text-center mt-10 text-lg">
+          Dive deeper into our wide-ranging partnerships by clicking below.
+        </p>
+        <div className="grid grid-cols-2 gap-4 w-full max-w-4xl p-10 mt-4">
+          {buttonData.map((button, index) => (
+            <Link key={index} href={button.link} passHref>
+              <div className="bg-white flex justify-between items-center p-3 rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out cursor-pointer">
+                <span className="text-black text-lg font-semibold">{button.text}</span>
+                <Image src={button.logo} alt={button.text} width={40} height={40} />
+              </div>
+            </Link>
+          ))}
         </div>
-      )}
-
-      {activeSection === 'section2' && (
-        <div>
-          <h2>Section 2: Video Player 1</h2>
-          <video controls width="600">
-            <source src="/videos/example.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      )}
+      </div>
     </div>
   );
 }
