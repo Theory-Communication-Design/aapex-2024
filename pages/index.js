@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 const buttonData = [
   { text: 'HAGERTY', logo: '/button-logo1.png', link: '/hagerty' },
@@ -16,21 +15,34 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Top Bar */}
-      <div className="bg-white h-16 flex justify-center items-center w-full shadow-md">
-        <Image src="/logo.png" alt="Logo" width={100} height={50} />
+      <div className="bg-white h-[361px] flex justify-center items-center w-full shadow-md">
+        <img
+          src="/logo.png"
+          alt="Logo"
+          style={{ width: '653px', height: '133px' }}
+        />
       </div>
 
       {/* Content Section */}
-      <div className="flex-grow flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url(/bg.png)' }}>
-        <p className="text-white text-center mt-10 text-lg">
+      <div className="flex-grow flex flex-col justify-center bg-cover bg-center" style={{ backgroundImage: 'url(/bg.png)' }}>
+        <p className="text-white text-center text-[70px] pb-[120px] mt-[-100px] font-emprintSemiBold">
           Dive deeper into our wide-ranging partnerships by clicking below.
         </p>
-        <div className="grid grid-cols-2 gap-4 w-full max-w-4xl p-10 mt-4">
+
+        {/* Adjusted container for buttons */}
+        <div className="flex flex-wrap justify-center gap-x-[250px] gap-y-[150px] w-full">
           {buttonData.map((button, index) => (
             <Link key={index} href={button.link} passHref>
-              <div className="bg-white flex justify-between items-center p-3 rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out cursor-pointer">
-                <span className="text-black text-lg font-semibold">{button.text}</span>
-                <Image src={button.logo} alt={button.text} width={40} height={40} />
+              <div
+                className="bg-white flex justify-between items-center p-3 rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-[1505px] h-[197px]"
+              >
+                <span className="ml-10 text-black text-[70px] font-semibold font-emprint">{button.text}</span>
+                <img
+                  src={button.logo}
+                  alt={button.text}
+                  style={{ maxWidth: '369px', maxHeight: '145px', objectFit: 'contain' }}
+                  className="mr-10"
+                />
               </div>
             </Link>
           ))}

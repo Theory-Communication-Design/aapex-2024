@@ -25,3 +25,27 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'EMprintSemibold';
+  src: url('/EMprintSemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EMprintRegular';
+  src: url('/EMprintRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EMprintBold';
+  src: url('/EMprintBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
