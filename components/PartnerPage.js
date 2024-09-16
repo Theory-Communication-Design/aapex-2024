@@ -24,7 +24,9 @@ const PartnerPage = ({ header, logo, paragraph, products, preview }) => {
         </div>
 
         {/* Paragraph */}
-        <p className="mt-6 text-[60px] font-emprint mt-20">{paragraph}</p>
+        <div className='w-[1550px]'>
+          <p className="mt-6 text-[60px] font-emprint pt-[25px]">{paragraph}</p>
+        </div>
 
         {/* Subheader with relative positioning to move it down */}
         <h2 className="relative text-[70px] font-emprintSemiBold" style={{ top: '150px' }}> {/* Adjust the top value as needed */}
@@ -32,14 +34,14 @@ const PartnerPage = ({ header, logo, paragraph, products, preview }) => {
         </h2>
 
         {/* Product Images as Buttons */}
-        <div className="flex space-x-8">
+        <div className="flex space-x-[75px] mt-3">
           {products.map((product, index) => (
             <Link key={index} href={product.link} passHref>
               <div className="cursor-pointer">
                 <img
                   src={product.image}
                   alt={product.text}
-                  style={{ width: 'auto', height: '804px' }}
+                  style={{ width: 'auto', height: '821px' }}
                 />
               </div>
             </Link>
