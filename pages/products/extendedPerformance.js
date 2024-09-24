@@ -1,34 +1,35 @@
 import ProductPage from 'components/ProductPage';
 import Header from 'components/Header';
 
-export default function TruckSUV() {
+export default function ExtendedPerformance() {
 
   const productData = {
-    header: 'Mobil 1™ Truck & SUV',
-    headerTextSize: '90px',
-    image: '/truckSUV.png',
+    header: 'Mobil 1™ Extended Performance',
+    headerTextSize: '80px',
+    image: '/extendedPerformance.png',
     paragraph: (
       <>
-        For some of the world’s hardest-working<br />
-        engines, Mobil 1 Truck and SUV delivers<br />
-        protection for towing, hauling and more.<br />
-        Three viscosities of the advanced full synthetic<br />
-        formula are available and are all designed to go<br />
-        10,000 miles between oil changes*.<br/>
-        <span className='text-[23.5px]'>*Protects for up to 10,000 miles or 1 year, whichever comes first</span>
+        The ideal choice for drivers who<br />
+        demand higher endurance and<br />
+        long-lasting protection for their engines.<br />
+        This full synthetic motor oil is designed to<br />
+        deliver outstanding wear protection, cleaning<br />
+        power and overall performance for up to 20,000<br/>
+        miles between oil changes*.<br/>
+        <span className='text-[23.5px]'>*Protects for up to 20,000 miles or 1 year, whichever comes first</span>
       </>
     ),
-    paragraphTextSize: '40px',
-    viscosity: '0W-20  |  5W-20  |  5W-30',
-    viscosityMt: '130px',
-    sectionMt: '125px',
+    paragraphTextSize: '45px',
+    viscosity: '0W-20  |  5W-20  |  5W-30  |  10W-30',
+    viscosityMt: '80px',
+    sectionMt: '150px',
     button1: '/xoverland-button.png',
-    button2: '/toyota-button.png',
+    button2: '/steer-button.png',
     button1Height: '122px',
-    button2Height: '120px',
+    button2Height: '122px',
     button1Href: '/xoverland',
-    button2Href: '/toyota',
-    buttonsMt: '260px',
+    button2Href: '/steer',
+    buttonsMt: '180px',
     preview: '/truckSUV-preview.png'
   };
 

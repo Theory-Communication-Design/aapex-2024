@@ -1,40 +1,50 @@
 import Link from 'next/link';
 
-const PartnerPage = ({ header, logo, paragraph, products, preview }) => {
+const PartnerPage = ({
+  headerImage,
+  headerHeight,
+  headerMt,
+  paragraph,
+  paragraphMt,
+  paragraphTextSize,
+  products,
+  productsMt,
+  preview,
+  subheaderTop
+}) => {
   return (
     <div className="relative min-h-screen">
       {/* Left Side */}
       <div
-        className="pl-[225px] pt-[200px] absolute top-0 left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
+        className="pl-[250px] pt-[200px] absolute top-0 left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
         style={{
           backgroundImage: 'url(/leftside.png)',
           backgroundSize: 'contain',
-          backgroundPosition: 'top'
+          backgroundPosition: 'top',
         }}
       >
-        {/* Header with Logo */}
-        <div className="flex items-center">
-          <h1 className="text-[100px] font-emprintSemiBold">{header}</h1>
+        {/* Header as an Image */}
+        <div className="flex items-center" style={{ marginTop: headerMt }}>
           <img
-            src={logo}
-            alt="Logo"
-            className="ml-20"
-            style={{ width: '137px', height: 'auto' }}
+            src={headerImage}
+            alt="Header"
+            className="w-auto"
+            style={{ height: headerHeight }}
           />
         </div>
 
         {/* Paragraph */}
-        <div className='w-[1550px]'>
-          <p className="mt-6 text-[60px] font-emprint pt-[25px]">{paragraph}</p>
-        </div>
+        <p className="font-emprint" style={{ marginTop: paragraphMt, fontSize: paragraphTextSize }}>
+          {paragraph}
+        </p>
 
-        {/* Subheader with relative positioning to move it down */}
-        <h2 className="relative text-[70px] font-emprintSemiBold" style={{ top: '150px' }}> {/* Adjust the top value as needed */}
+        {/* Subheader with relative positioning */}
+        <h2 className="relative text-[70px] font-emprintSemiBold" style={{ top: subheaderTop }}>
           Feature Products:
         </h2>
 
         {/* Product Images as Buttons */}
-        <div className="flex space-x-[75px] mt-3">
+        <div className="flex space-x-[75px]" style={{ marginTop: productsMt }}>
           {products.map((product, index) => (
             <Link key={index} href={product.link} passHref>
               <div className="cursor-pointer">

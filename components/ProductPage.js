@@ -1,6 +1,26 @@
 import Link from 'next/link';
 
-const ProductPage = ({ header, image, paragraph, viscosity, button, preview }) => {
+const ProductPage = ({
+  header,
+  headerTextSize,
+  image,
+  paragraph,
+  paragraphTextSize,
+  viscosity,
+  viscosityMt,
+  button1,
+  button2,
+  button3,
+  button1Height,
+  button2Height,
+  button3Height,
+  button1Href,
+  button2Href,
+  button3Href,
+  buttonsMt,
+  preview,
+  sectionMt,
+}) => {
   return (
     <div className="relative min-h-screen">
       {/* Left Side */}
@@ -13,38 +33,59 @@ const ProductPage = ({ header, image, paragraph, viscosity, button, preview }) =
         }}
       >
         {/* Header */}
-        <h1 className="text-[90px] font-emprintSemiBold">{header}</h1>
+        <h1 className="font-emprintSemiBold" style={{ fontSize: headerTextSize }}>{header}</h1>
 
         {/* Image, Paragraph, Viscosity, and Featured Section */}
-        <div className="flex mt-[125px] items-start">
-          {/* Truck SUV Image */}
+        <div className="flex items-start" style={{ marginTop: sectionMt }}>
           <img
             src={image}
-            alt="Truck SUV"
             className="mr-10"
             style={{ height: '1346px', width: 'auto' }}
           />
 
           {/* Paragraph, Viscosity, and Featured beside Image */}
           <div className="flex flex-col ml-28">
-            <p className="text-[50px] font-emprint mt-[-20px]">{paragraph}</p>
-            <div className="mt-24">
-              <h2 className="text-[65px] font-emprintSemiBold">Available Viscosities:</h2>
-              <p className="text-[65px] font-emprintSemiBold">{viscosity}</p>
+            <p className="font-emprint" style={{ fontSize: paragraphTextSize, marginTop: '-20px' }}>
+              {paragraph}
+            </p>
+
+            <div className="mt-24" style={{ marginTop: viscosityMt }}>
+              <h2 className="text-[55px] font-emprintSemiBold">Available Viscosities:</h2>
+              <p className="text-[60px] font-emprintSemiBold mt-5">{viscosity}</p>
             </div>
 
             {/* Featured In Section */}
-            <div className="flex items-center mt-44">
-              <h2 className="text-[65px] font-emprintSemiBold">Featured in:</h2>
-              <Link href="/xoverland" passHref>
+            <div className="flex items-center" style={{ marginTop: buttonsMt }}>
+              <h2 className="text-[60px] font-emprintSemiBold">Featured in:</h2>
+
+              <Link href={button1Href} passHref>
                 <div className="ml-10 cursor-pointer">
                   <img
-                    src={button}
-                    alt="XOverland Button"
-                    style={{ width: '650px', height: 'auto' }}
+                    src={button1}
+                    style={{ height: button1Height, width: 'auto' }}
                   />
                 </div>
               </Link>
+
+              <Link href={button2Href} passHref>
+                <div className="ml-5 cursor-pointer">
+                  <img
+                    src={button2}
+                    style={{ height: button2Height, width: 'auto' }}
+                  />
+                </div>
+              </Link>
+
+              {button3 && button3Href && (
+                <Link href={button3Href} passHref>
+                  <div className="ml-5 cursor-pointer">
+                    <img
+                      src={button3}
+                      style={{ height: button3Height, width: 'auto' }}
+                    />
+                  </div>
+                </Link>
+              )}
             </div>
           </div>
         </div>
