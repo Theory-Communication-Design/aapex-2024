@@ -28,6 +28,8 @@ export default function HotWheels() {
     productsMt: '-30px',
     preview: '/xoverland-preview.png',
     subheaderTop: '100px',
+    videoSrc: '/videos/testVideo.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
   return (
@@ -44,6 +46,8 @@ export default function HotWheels() {
         productsMt={partnerData.productsMt}
         preview={partnerData.preview}
         subheaderTop={partnerData.subheaderTop}
+        videoSrc={partnerData.videoSrc}
+        fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>
   );

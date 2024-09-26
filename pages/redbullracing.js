@@ -26,6 +26,8 @@ export default function RedBullRacing() {
     productsMt: '50px',
     preview: '/xoverland-preview.png',
     subheaderTop: '170px',
+    videoSrc: '/videos/testVideo.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
   return (
@@ -42,6 +44,8 @@ export default function RedBullRacing() {
         productsMt={partnerData.productsMt}
         preview={partnerData.preview}
         subheaderTop={partnerData.subheaderTop}
+        videoSrc={partnerData.videoSrc}
+        fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>
   );

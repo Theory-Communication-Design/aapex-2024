@@ -27,8 +27,9 @@ export default function XOverland() {
       { image: '/xoverland-product2.png', link: '/products/extendedPerformance' }
     ],
     productsMt: '-40px',
-    preview: '/xoverland-preview.png',
     subheaderTop: '100px',
+    videoSrc: '/videos/testVideo.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
   return (
@@ -43,8 +44,9 @@ export default function XOverland() {
         paragraphTextSize={partnerData.paragraphTextSize}
         products={partnerData.products}
         productsMt={partnerData.productsMt}
-        preview={partnerData.preview}
         subheaderTop={partnerData.subheaderTop}
+        videoSrc={partnerData.videoSrc}
+        fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>
   );
