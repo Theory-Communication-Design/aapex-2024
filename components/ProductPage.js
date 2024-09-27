@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useState, useRef } from 'react';
 
 const ProductPage = ({
   header,
@@ -18,9 +19,38 @@ const ProductPage = ({
   button2Href,
   button3Href,
   buttonsMt,
-  preview,
   sectionMt,
+  videoSrc,
+  fullScreenVideoSrc
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const fullScreenVideoRef = useRef(null);
+
+  // Function to handle play button click
+  const handlePlayClick = () => {
+    setIsModalOpen(true);
+
+    setTimeout(() => {
+      if (fullScreenVideoRef.current) {
+        fullScreenVideoRef.current.play();
+      }
+    }, 100);
+  };
+
+  // Function to close the modal (and stop video)
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    if (fullScreenVideoRef.current) {
+      fullScreenVideoRef.current.pause();
+      fullScreenVideoRef.current.currentTime = 0;
+    }
+  };
+
+  // Event handler for when the video ends
+  const handleVideoEnded = () => {
+    handleCloseModal();
+  };
+
   return (
     <div className="relative min-h-screen">
       {/* Left Side */}
@@ -91,14 +121,54 @@ const ProductPage = ({
         </div>
       </div>
 
-      {/* Right Side */}
-      <div className="relative ml-[44%] w-[56%] h-full">
-        <img
-          src={preview}
-          alt="Preview Image"
+      {/* Right Side - Video */}
+      <div className="absolute right-0  h-full">
+        {/* Background looping video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src={videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Play Button Icon */}
+        <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
+          <img
+            src="/play-icon.png"
+            alt="Play Icon"
+            className="w-[356px] h-auto cursor-pointer z-10"
+            onClick={handlePlayClick}
+            style={{ pointerEvents: 'auto' }}
+          />
+        </div>
       </div>
+
+      {/* Modal for fullscreen video */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
+          <video
+            ref={fullScreenVideoRef}
+            controls={false}
+            muted
+            className="w-full h-full object-contain"
+            onEnded={handleVideoEnded}
+          >
+            <source src={fullScreenVideoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {/* Close button for the modal */}
+          <button
+            onClick={handleCloseModal}
+            className="absolute top-5 right-5 text-white text-[40px]"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </div>
   );
 };

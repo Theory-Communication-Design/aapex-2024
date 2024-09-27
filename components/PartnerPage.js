@@ -89,8 +89,8 @@ const PartnerPage = ({
         </div>
       </div>
 
-      {/* Right Side - Video as Prop */}
-      <div className="relative ml-[16%] w-[85%] h-full">
+      {/* Right Side - Video */}
+      <div className="absolute right-0  h-full">
         {/* Background looping video */}
         <video
           autoPlay
@@ -104,14 +104,13 @@ const PartnerPage = ({
         </video>
 
         {/* Play Button Icon */}
-        <div
-          className="absolute inset-0 flex justify-center items-center cursor-pointer ml-[50%]"
-          onClick={handlePlayClick}
-        >
+        <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
           <img
             src="/play-icon.png"
             alt="Play Icon"
-            className="w-[356px] h-auto"
+            className="w-[356px] h-auto cursor-pointer z-10"
+            onClick={handlePlayClick}
+            style={{ pointerEvents: 'auto' }}
           />
         </div>
       </div>

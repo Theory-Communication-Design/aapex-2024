@@ -29,7 +29,8 @@ export default function TruckSUV() {
     button1Href: '/xoverland',
     button2Href: '/toyota',
     buttonsMt: '260px',
-    preview: '/truckSUV-preview.png'
+    videoSrc: '/videos/preview.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
   return (
@@ -51,7 +52,8 @@ export default function TruckSUV() {
         button1Href={productData.button1Href}
         button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
-        preview={productData.preview}
+        videoSrc={productData.videoSrc}
+        fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>
   );

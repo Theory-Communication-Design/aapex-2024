@@ -77,7 +77,7 @@ export default function Home() {
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1 }}
       >
-        <source src="/videos/testVideo.mp4" type="video/mp4" />
+        <source src="/videos/menu.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

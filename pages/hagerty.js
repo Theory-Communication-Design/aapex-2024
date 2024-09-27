@@ -22,13 +22,13 @@ export default function Hagerty() {
     paragraphMt: '100px',
     paragraphTextSize: '40px',
     products: [
-      { image: 'hagerty-product1.png', link: '/products/truckSUV' },
+      { image: 'hagerty-product1.png', link: '/products/extendedPerformance' },
       { image: '/hagerty-product2.png', link: '/products/product2' }
     ],
     productsMt: '60px',
     preview: '/xoverland-preview.png',
     subheaderTop: '170px',
-    videoSrc: '/videos/testVideo.mp4',
+    videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 

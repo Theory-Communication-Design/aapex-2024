@@ -32,7 +32,8 @@ export default function FullSynthetic() {
     button2Href: '/oem/toyota',
     button3Href: '/hotwheels',
     buttonsMt: '180px',
-    preview: '/truckSUV-preview.png'
+    videoSrc: '/videos/preview.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
   return (
@@ -58,6 +59,8 @@ export default function FullSynthetic() {
         button3Href={productData.button3Href}
         buttonsMt={productData.buttonsMt}
         preview={productData.preview}
+        videoSrc={productData.videoSrc}
+        fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>
   );

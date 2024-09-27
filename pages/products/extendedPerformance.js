@@ -30,7 +30,8 @@ export default function ExtendedPerformance() {
     button1Href: '/xoverland',
     button2Href: '/steer',
     buttonsMt: '180px',
-    preview: '/truckSUV-preview.png'
+    videoSrc: '/videos/preview.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
   return (
@@ -53,6 +54,8 @@ export default function ExtendedPerformance() {
         button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
         preview={productData.preview}
+        videoSrc={productData.videoSrc}
+        fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>
   );

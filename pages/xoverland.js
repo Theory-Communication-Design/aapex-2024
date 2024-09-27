@@ -28,7 +28,7 @@ export default function XOverland() {
     ],
     productsMt: '-40px',
     subheaderTop: '100px',
-    videoSrc: '/videos/testVideo.mp4',
+    videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
