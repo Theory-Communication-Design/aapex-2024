@@ -22,11 +22,10 @@ export default function Hagerty() {
     paragraphMt: '100px',
     paragraphTextSize: '40px',
     products: [
-      { image: 'hagerty-product1.png', link: '/products/extendedPerformance' },
-      { image: '/hagerty-product2.png', link: '/products/product2' }
+      { image: '/hagerty-product1.png', link: '/products/extendedPerformanceHM' },
+      { image: '/hagerty-product2.png', link: '/products/product2' } // ---------- NEED TO UPDATE ----------
     ],
     productsMt: '60px',
-    preview: '/xoverland-preview.png',
     subheaderTop: '170px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
@@ -44,7 +43,6 @@ export default function Hagerty() {
         paragraphTextSize={partnerData.paragraphTextSize}
         products={partnerData.products}
         productsMt={partnerData.productsMt}
-        preview={partnerData.preview}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}

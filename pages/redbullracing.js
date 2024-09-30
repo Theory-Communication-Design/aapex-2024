@@ -21,10 +21,9 @@ export default function RedBullRacing() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: 'redbull-product1.png', link: '/products/truckSUV' }
+      { image: '/redbull-product1.png', link: '/products/racing' }
     ],
     productsMt: '50px',
-    preview: '/xoverland-preview.png',
     subheaderTop: '170px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
@@ -42,7 +41,6 @@ export default function RedBullRacing() {
         paragraphTextSize={partnerData.paragraphTextSize}
         products={partnerData.products}
         productsMt={partnerData.productsMt}
-        preview={partnerData.preview}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}

@@ -23,10 +23,9 @@ export default function HotWheels() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: 'hotwheels-product1.png', link: '/products/fullSynthetic' }
+      { image: '/hotwheels-product1.png', link: '/products/fullSynthetic' }
     ],
     productsMt: '-30px',
-    preview: '/xoverland-preview.png',
     subheaderTop: '100px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
@@ -44,7 +43,6 @@ export default function HotWheels() {
         paragraphTextSize={partnerData.paragraphTextSize}
         products={partnerData.products}
         productsMt={partnerData.productsMt}
-        preview={partnerData.preview}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}

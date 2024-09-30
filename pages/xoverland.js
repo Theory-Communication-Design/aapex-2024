@@ -23,7 +23,7 @@ export default function XOverland() {
     paragraphMt: '0px',
     paragraphTextSize: '40px',
     products: [
-      { image: 'xoverland-product1.png', link: '/products/truckSUV' },
+      { image: '/xoverland-product1.png', link: '/products/truckSUV' },
       { image: '/xoverland-product2.png', link: '/products/extendedPerformance' }
     ],
     productsMt: '-40px',
