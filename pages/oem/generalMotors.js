@@ -2,39 +2,39 @@ import PartnerPage from 'components/PartnerPage';
 import Header from 'components/Header';
 
 export default function GeneralMotors() {
-  // const partnerData = {
-  //   headerImage: '/porsche-header.png',
-  //   headerHeight: '87px',
-  //   headerMt: '-80px',
-  //   paragraph: (
-  //     <>
-  //       The partnership between porsche and the Mobil 1™ brand is dedicated<br />
-  //       to preserving automotive history and culture, protecting iconic vehicles for<br />
-  //       future generations by providing the essential care classic cars deserve. This<br />
-  //       collaboration supports the RADwood show series, which offers an exclusive<br />
-  //       opportunity to celebrate classic cars from the 80s and 90s, with thousands of<br />
-  //       attendees from all over the country. It has also offered the opportunity for Rod<br />
-  //       Emory to participate in porsche events and promote Mobil 1 products, thus reinforcing<br />
-  //       both brands’ ideologies and contributing to social content. Retailers can benefit from the<br />
-  //       passionate market this partnership taps into.
-  //     </>
-  //   ),
-  //   paragraphMt: '100px',
-  //   paragraphTextSize: '40px',
-  //   products: [
-  //     { image: '/porsche-product1.png', link: '/products/extendedPerformance' },
-  //     { image: '/porsche-product2.png', link: '/products/product2' }
-  //   ],
-  //   productsMt: '60px',
-  //   subheaderTop: '170px',
-  //   videoSrc: '/videos/preview.mp4',
-  //   fullScreenVideoSrc: '/videos/testVideo.mp4'
-  // };
+  const partnerData = {
+    headerImage: '/gm-header.png',
+    headerHeight: '170px',
+    headerMt: '-80px',
+    paragraph: (
+      <>
+        General Motors has a rich history of automotive innovation, and the<br />
+        Mobil 1™ brand is proud to be a part of that legacy. Mobil 1 advanced full<br />
+        synthetic motor oil is the factory fill and recommended oil for numerous GM<br />
+        vehicles, including the iconic Chevrolet Corvette. With nearly 1 million Corvettes<br />
+        rolling off the line factory-filled, Mobil 1™ Supercar was developed to capture the<br />
+        rue essence of our performance heritage. Mobil 1 motor oils are also the Official<br />
+        Motor Oil of Chevrolet Performance, which features multiple custom crate engine<br />
+        builds used as display vehicles for various Retail needs. These collaborations allow<br />
+        Retailers to take advantage of the trust and loyalty associated with both powerful<br />
+        automotive brands.
+      </>
+    ),
+    paragraphMt: '100px',
+    paragraphTextSize: '40px',
+    products: [
+      { image: '/gm-product1.png', link: '/products/supercar' }
+    ],
+    productsMt: '-70px',
+    subheaderTop: '80px',
+    videoSrc: '/videos/preview.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      {/* <PartnerPage
+      <PartnerPage
         headerImage={partnerData.headerImage}
         headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
@@ -46,7 +46,7 @@ export default function GeneralMotors() {
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
-      /> */}
+      />
     </div>
   );
 }
