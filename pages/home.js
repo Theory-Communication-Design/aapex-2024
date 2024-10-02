@@ -1,14 +1,14 @@
 import Link from 'next/link';
 
-const buttonData = [
-  { text: 'HAGERTY', logo: '/button-logo1.png', link: '/hagerty' },
-  { text: 'HOT WHEELS', logo: '/button-logo2.png', link: '/hotwheels' },
-  { text: 'OEM', logo: '/button-logo3.png', link: '/oem' },
-  { text: 'RED BULL RACING', logo: '/button-logo4.png', link: '/redbullracing' },
-  { text: 'ROCKET LEAGUE', logo: '/button-logo5.png', link: '/rocketleague' },
-  { text: 'STEER', logo: '/button-logo6.png', link: '/steer' },
-  { text: 'XOVERLAND', logo: '/button-logo7.png', link: '/xoverland' },
-  { text: 'MOBIL 1 PRODUCTS', logo: '/button-logo8.png', link: '/products' },
+const buttonImages = [
+  { image: '/hagerty-home.png', link: '/hagerty' },
+  { image: '/hotwheels-home.png', link: '/hotwheels' },
+  { image: '/oem-home.png', link: '/oem' },
+  { image: '/redbull-home.png', link: '/redbullracing' },
+  { image: '/rocketLeague-home.png', link: '/rocketleague' },
+  { image: '/steer-home.png', link: '/steer' },
+  { image: '/xoverland-home.png', link: '/xoverland' },
+  { image: '/products-home.png', link: '/products' },
 ];
 
 export default function Home() {
@@ -44,19 +44,13 @@ export default function Home() {
 
         {/* Adjusted container for buttons */}
         <div className="flex flex-wrap justify-center gap-x-[250px] gap-y-[150px] w-full">
-          {buttonData.map((button, index) => (
+          {buttonImages.map((button, index) => (
             <Link key={index} href={button.link} passHref>
-              <div
-                className="bg-white flex justify-between items-center p-3 rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-[1505px] h-[197px]"
-              >
-                <span className="ml-10 text-black text-[70px] font-semibold font-emprint">{button.text}</span>
                 <img
-                  src={button.logo}
-                  alt={button.text}
-                  style={{ maxWidth: '369px', maxHeight: '145px', objectFit: 'contain' }}
+                  src={button.image}
+                  style={{ width: '1505px', height: 'auto', objectFit: 'contain' }}
                   className="mr-10"
                 />
-              </div>
             </Link>
           ))}
         </div>

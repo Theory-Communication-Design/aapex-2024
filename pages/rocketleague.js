@@ -22,7 +22,7 @@ export default function RocketLeague() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/rocketLeague-product1.png', link: '/products/racing' }
+      { image: '/rocketLeague-product1.png', link: '/products/advancedFuelEconomy' }
     ],
     productsMt: '0px',
     subheaderTop: '130px',

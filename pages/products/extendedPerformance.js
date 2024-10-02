@@ -22,7 +22,7 @@ export default function ExtendedPerformance() {
     paragraphTextSize: '45px',
     viscosity: '0W-20  |  5W-20  |  5W-30  |  10W-30',
     viscosityMt: '80px',
-    sectionMt: '150px',
+    sectionMt: '180px',
     button1: '/xoverland-button.png',
     button2: '/steer-button.png',
     button1Height: '122px',
@@ -41,6 +41,7 @@ export default function ExtendedPerformance() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
+        imageHeight="1348px"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
@@ -53,7 +54,6 @@ export default function ExtendedPerformance() {
         button1Href={productData.button1Href}
         button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
-        preview={productData.preview}
         videoSrc={productData.videoSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />

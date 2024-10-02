@@ -21,13 +21,13 @@ export default function TruckSUV() {
     paragraphTextSize: '40px',
     viscosity: '0W-20  |  5W-20  |  5W-30',
     viscosityMt: '130px',
-    sectionMt: '125px',
+    sectionMt: '150px',
     button1: '/xoverland-button.png',
     button2: '/toyota-button.png',
     button1Height: '122px',
-    button2Height: '120px',
+    button2Height: '122px',
     button1Href: '/xoverland',
-    button2Href: '/toyota',
+    button2Href: '/oem/toyota',
     buttonsMt: '260px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
@@ -40,6 +40,7 @@ export default function TruckSUV() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
+        imageHeight="1346px"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}

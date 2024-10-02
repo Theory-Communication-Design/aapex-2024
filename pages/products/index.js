@@ -4,7 +4,7 @@ import Header from 'components/Header';
 const menuItems = [
   { text: 'Mobil 1', link: '/products/mobil1' },
   { text: 'ESP', link: '/products/esp' },
-  { text: 'Mobil 1 Classic Car', link: '/products/ClassicCar' },
+  { text: 'Mobil 1 Classic Car', link: '/products/classicCar' },
   { text: 'Advanced Fuel Economy', link: '/products/advancedFuelEconomy' },
   { text: 'Extended Performance High Mileage', link: '/products/extendedPerformanceHM' },
   { text: 'Supercar', link: '/products/supercar' },

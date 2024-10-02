@@ -20,7 +20,7 @@ export default function FullSynthetic() {
     ),
     paragraphTextSize: '45px',
     viscosity: '5W-20  |  5W-30  |  15W-50',
-    viscosityMt: '80px',
+    viscosityMt: '110px',
     sectionMt: '150px',
     button1: '/porsche-button.png',
     button2: '/toyota-button.png',
@@ -31,7 +31,7 @@ export default function FullSynthetic() {
     button1Href: '/oem/porsche',
     button2Href: '/oem/toyota',
     button3Href: '/hotwheels',
-    buttonsMt: '180px',
+    buttonsMt: '220px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -43,6 +43,7 @@ export default function FullSynthetic() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
+        imageHeight="1347px"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
@@ -58,7 +59,6 @@ export default function FullSynthetic() {
         button2Href={productData.button2Href}
         button3Href={productData.button3Href}
         buttonsMt={productData.buttonsMt}
-        preview={productData.preview}
         videoSrc={productData.videoSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
