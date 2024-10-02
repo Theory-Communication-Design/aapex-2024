@@ -23,7 +23,7 @@ export default function Hagerty() {
     paragraphTextSize: '40px',
     products: [
       { image: '/hagerty-product1.png', link: '/products/extendedPerformanceHM' },
-      { image: '/hagerty-product2.png', link: '/products/product2' } // ---------- NEED TO UPDATE ----------
+      { image: '/hagerty-product2.png', link: '/products/classicCar' }
     ],
     productsMt: '60px',
     subheaderTop: '170px',

@@ -23,7 +23,7 @@ export default function ExtendedPerformanceHM() {
     sectionMt: '100px',
     button1: '/hagerty-button.png',
     button1Height: '121px',
-    button1Href: '/xoverland',
+    button1Href: '/hagerty',
     buttonsMt: '250px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
