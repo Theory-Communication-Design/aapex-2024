@@ -5,7 +5,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 
 export default function Steer() {
   const partnerData = {
-    headerImage: '/steer-header.png',
+    headerImage: '/images/steer-header.png',
     headerHeight: '165px',
     headerMt: '-80px',
     paragraph: (
@@ -23,7 +23,7 @@ export default function Steer() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/steer-product1.png', link: '/products/extendedPerformance' }
+      { image: '/images/steer-product1.png', link: '/products/extendedPerformance/' }
     ],
     productsMt: '60px',
     subheaderTop: '180px',

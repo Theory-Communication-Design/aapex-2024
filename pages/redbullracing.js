@@ -5,7 +5,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 
 export default function RedBullRacing() {
   const partnerData = {
-    headerImage: '/redbull-header.png',
+    headerImage: '/images/redbull-header.png',
     headerHeight: '160px',
     headerMt: '-80px',
     paragraph: (
@@ -23,7 +23,7 @@ export default function RedBullRacing() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/redbull-product1.png', link: '/products/racing' }
+      { image: '/images/redbull-product1.png', link: '/products/racing/' }
     ],
     productsMt: '50px',
     subheaderTop: '170px',

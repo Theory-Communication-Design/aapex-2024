@@ -9,7 +9,7 @@ export default function AdvancedFuelEconomy() {
   const productData = {
     header: 'Mobil 1™ Advanced Fuel Economy',
     headerTextSize: '80px',
-    image: '/advancedFuelEconomy.png',
+    image: '/images/advancedFuelEconomy.png',
     paragraph: (
       <>
         For drivers who demand the best in<br />
@@ -26,8 +26,8 @@ export default function AdvancedFuelEconomy() {
     viscosity: '0W-8  |  0W-16  |  0W-20  |  0W-30',
     viscosityMt: '120px',
     sectionMt: '160px',
-    button1: '/rocketLeague-button.png',
-    button2: '/toyota-button.png',
+    button1: '/images/rocketLeague-button.png',
+    button2: '/images/toyota-button.png',
     button1Height: '122px',
     button2Height: '122px',
     button1Href: '/rocketleague',

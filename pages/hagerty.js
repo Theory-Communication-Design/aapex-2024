@@ -5,7 +5,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 
 export default function Hagerty() {
   const partnerData = {
-    headerImage: '/hagerty-header.png',
+    headerImage: '/images/hagerty-header.png',
     headerHeight: '87px',
     headerMt: '-80px',
     paragraph: (
@@ -24,8 +24,8 @@ export default function Hagerty() {
     paragraphMt: '100px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/hagerty-product1.png', link: '/products/extendedPerformanceHM' },
-      { image: '/hagerty-product2.png', link: '/products/classicCar' }
+      { image: '/images/hagerty-product1.png', link: '/products/extendedPerformanceHM' },
+      { image: '/images/hagerty-product2.png', link: '/products/classicCar' }
     ],
     productsMt: '60px',
     subheaderTop: '170px',

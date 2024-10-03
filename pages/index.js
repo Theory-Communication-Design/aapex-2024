@@ -12,7 +12,7 @@ export default function Landing() {
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1 }}
       >
-        <source src="/videos/landing1.mp4" type="video/mp4" />
+        <source src="./videos/landing1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -29,9 +29,9 @@ export default function Landing() {
       </h1>
 
       {/* Call to Action */}
-      <Link href="/home">
+      <Link href="./home/">
         <img
-          src="/landing-cta.png"
+          src="/images/landing-cta.png"
           alt="Call to Action"
           className="relative mt-[250px] z-10"
           style={{ width: '622px', height: 'auto' }}

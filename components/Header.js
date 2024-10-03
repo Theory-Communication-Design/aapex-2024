@@ -20,7 +20,7 @@ const Header = () => {
     <div className="bg-white h-[361px] flex items-center w-full z-20 shadow-2xl">
       <div className="ml-[250px] mr-[150px]">
         <img
-          src="/logo.png"
+          src="/images/logo.png"
           alt="Logo"
           style={{ width: '480px', height: '98px' }}
         />

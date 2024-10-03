@@ -5,7 +5,7 @@ import UserActivityContext from '../../contexts/UserActivityContext';
 
 export default function GeneralMotors() {
   const partnerData = {
-    headerImage: '/gm-header.png',
+    headerImage: '/images/gm-header.png',
     headerHeight: '170px',
     headerMt: '-80px',
     paragraph: (
@@ -25,7 +25,7 @@ export default function GeneralMotors() {
     paragraphMt: '100px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/gm-product1.png', link: '/products/supercar' }
+      { image: '/images/gm-product1.png', link: '/products/supercar' }
     ],
     productsMt: '-70px',
     subheaderTop: '80px',

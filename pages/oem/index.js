@@ -11,7 +11,7 @@ export default function OEM() {
       <div className="flex flex-col items-center gap-[20px]">
         <Link href="/oem/toyota" passHref>
           <img
-            src="/toyota-menu.png"
+            src="/images/toyota-menu.png"
             alt="Toyota Menu"
             className="cursor-pointer w-full"
             style={{ maxWidth: '3840px' }}
@@ -19,7 +19,7 @@ export default function OEM() {
         </Link>
         <Link href="/oem/porsche" passHref>
           <img
-            src="/porsche-menu.png"
+            src="/images/porsche-menu.png"
             alt="Porsche Menu"
             className="cursor-pointer w-full"
             style={{ maxWidth: '3840px' }}
@@ -27,7 +27,7 @@ export default function OEM() {
         </Link>
         <Link href="/oem/generalMotors" passHref>
           <img
-            src="/gm-menu.png"
+            src="/images/gm-menu.png"
             alt="GM Menu"
             className="cursor-pointer w-full"
             style={{ maxWidth: '3840px' }}

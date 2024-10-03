@@ -5,7 +5,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 
 export default function XOverland() {
   const partnerData = {
-    headerImage: '/xoverland-header.png',
+    headerImage: '/images/xoverland-header.png',
     headerHeight: '234px',
     headerMt: '-80px',
     paragraph: (
@@ -25,8 +25,8 @@ export default function XOverland() {
     paragraphMt: '0px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/xoverland-product1.png', link: '/products/truckSUV' },
-      { image: '/xoverland-product2.png', link: '/products/extendedPerformance' }
+      { image: '/images/xoverland-product1.png', link: '/products/truckSUV/' },
+      { image: '/images/xoverland-product2.png', link: '/products/extendedPerformance/' }
     ],
     productsMt: '-40px',
     subheaderTop: '100px',

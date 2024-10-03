@@ -9,7 +9,7 @@ export default function ExtendedPerformance() {
   const productData = {
     header: 'Mobil 1™ Extended Performance',
     headerTextSize: '80px',
-    image: '/extendedPerformance.png',
+    image: '/images/extendedPerformance.png',
     paragraph: (
       <>
         The ideal choice for drivers who<br />
@@ -26,8 +26,8 @@ export default function ExtendedPerformance() {
     viscosity: '0W-20  |  5W-20  |  5W-30  |  10W-30',
     viscosityMt: '80px',
     sectionMt: '180px',
-    button1: '/xoverland-button.png',
-    button2: '/steer-button.png',
+    button1: '/images/xoverland-button.png',
+    button2: '/images/steer-button.png',
     button1Height: '122px',
     button2Height: '122px',
     button1Href: '/xoverland',

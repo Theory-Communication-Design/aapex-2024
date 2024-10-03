@@ -48,7 +48,7 @@ const PartnerPage = ({
       <div
         className="pl-[250px] pt-[200px] absolute top-[-2px] left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
         style={{
-          backgroundImage: 'url(/leftside.png)',
+          backgroundImage: 'url(/images/leftside.png)',
           backgroundSize: 'contain',
           backgroundPosition: 'top',
         }}
@@ -106,7 +106,7 @@ const PartnerPage = ({
         {/* Play Button Icon */}
         <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
           <img
-            src="/play-icon.png"
+            src="/image/play-icon.png"
             alt="Play Icon"
             className="w-[356px] h-auto cursor-pointer z-10"
             onClick={handlePlayClick}

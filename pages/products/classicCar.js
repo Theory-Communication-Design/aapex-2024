@@ -9,7 +9,7 @@ export default function ClassicCar() {
   const productData = {
     header: 'Mobil 1™ Classic Car',
     headerTextSize: '90px',
-    image: '/classicCar.png',
+    image: '/images/classicCar.png',
     paragraph: (
       <>
         The perfect choice for owners of classic<br />
@@ -24,7 +24,7 @@ export default function ClassicCar() {
     viscosity: '10W-30',
     viscosityMt: '170px',
     sectionMt: '150px',
-    button1: '/hagerty-button.png',
+    button1: '/images/hagerty-button.png',
     button1Height: '121px',
     button1Href: '/hagerty',
     buttonsMt: '260px',

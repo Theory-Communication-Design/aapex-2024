@@ -5,7 +5,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 
 export default function RocketLeague() {
   const partnerData = {
-    headerImage: '/rocketLeague-header.png',
+    headerImage: '/images/rocketLeague-header.png',
     headerHeight: '165px',
     headerMt: '-80px',
     paragraph: (
@@ -24,7 +24,7 @@ export default function RocketLeague() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/rocketLeague-product1.png', link: '/products/advancedFuelEconomy' }
+      { image: '/images/rocketLeague-product1.png', link: '/products/advancedFuelEconomy/' }
     ],
     productsMt: '0px',
     subheaderTop: '130px',

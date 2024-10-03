@@ -1,14 +1,14 @@
 import Link from 'next/link';
 
 const buttonImages = [
-  { image: '/hagerty-home.png', link: '/hagerty' },
-  { image: '/hotwheels-home.png', link: '/hotwheels' },
-  { image: '/oem-home.png', link: '/oem' },
-  { image: '/redbull-home.png', link: '/redbullracing' },
-  { image: '/rocketLeague-home.png', link: '/rocketleague' },
-  { image: '/steer-home.png', link: '/steer' },
-  { image: '/xoverland-home.png', link: '/xoverland' },
-  { image: '/products-home.png', link: '/products' },
+  { image: '/images/hagerty-home.png', link: '/hagerty/' },
+  { image: '/images/hotwheels-home.png', link: '/hotwheels/' },
+  { image: '/images/oem-home.png', link: '/oem/' },
+  { image: '/images/redbull-home.png', link: '/redbullracing/' },
+  { image: '/images/rocketLeague-home.png', link: '/rocketleague/' },
+  { image: '/images/steer-home.png', link: '/steer/' },
+  { image: '/images/xoverland-home.png', link: '/xoverland/' },
+  { image: '/images/products-home.png', link: '/products/' },
 ];
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
       {/* Top Bar */}
       <div className="relative z-10 bg-white h-[361px] flex justify-center items-center w-full shadow-md">
         <img
-          src="/logo.png"
+          src="/images/logo.png"
           alt="Logo"
           style={{ width: '653px', height: '133px' }}
         />

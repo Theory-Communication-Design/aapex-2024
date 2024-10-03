@@ -61,7 +61,7 @@ const ProductPage = ({
       <div
         className="pl-[225px] pt-[180px] absolute top-0 left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
         style={{
-          backgroundImage: 'url(/leftside-product.png)',
+          backgroundImage: 'url(/images/leftside-product.png)',
           backgroundSize: 'contain',
           backgroundPosition: 'top',
         }}
@@ -134,7 +134,7 @@ const ProductPage = ({
         </video>
         <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
           <img
-            src="/play-icon.png"
+            src="/images/play-icon.png"
             alt="Play Icon"
             className="w-[356px] h-auto cursor-pointer z-10"
             onClick={handlePlayClick}

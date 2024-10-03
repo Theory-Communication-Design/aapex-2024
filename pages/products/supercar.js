@@ -9,7 +9,7 @@ export default function Supercar() {
   const productData = {
     header: 'Mobil 1™ Supercar',
     headerTextSize: '90px',
-    image: '/supercar.png',
+    image: '/images/supercar.png',
     paragraph: (
       <>
         For some of the highest-performing<br />
@@ -25,7 +25,7 @@ export default function Supercar() {
     viscosity: '0W-40  |  5W-50',
     viscosityMt: '150px',
     sectionMt: '150px',
-    button1: '/gm-button.png',
+    button1: '/images/gm-button.png',
     button1Height: '121px',
     button1Href: '/oem/generalMotors',
     buttonsMt: '250px',

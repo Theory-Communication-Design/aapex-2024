@@ -5,7 +5,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 
 export default function HotWheels() {
   const partnerData = {
-    headerImage: '/hotwheels-header.png',
+    headerImage: '/images/hotwheels-header.png',
     headerHeight: '131px',
     headerMt: '-80px',
     paragraph: (
@@ -25,7 +25,7 @@ export default function HotWheels() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/hotwheels-product1.png', link: '/products/fullSynthetic' }
+      { image: '/images/hotwheels-product1.png', link: '/products/fullSynthetic' }
     ],
     productsMt: '-30px',
     subheaderTop: '100px',

@@ -9,7 +9,7 @@ export default function ESP() {
   const productData = {
     header: 'Mobil 1™ ESP',
     headerTextSize: '90px',
-    image: '/esp.png',
+    image: '/images/esp.png',
     paragraph: (
       <>
         The ideal choice for drivers of gasoline<br />
@@ -24,7 +24,7 @@ export default function ESP() {
     viscosity: '0W-40',
     viscosityMt: '170px',
     sectionMt: '150px',
-    button1: '/porsche-button1.png',
+    button1: '/images/porsche-button1.png',
     button1Height: '121px',
     button1Href: '/oem/porsche',
     buttonsMt: '260px',

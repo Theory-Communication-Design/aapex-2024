@@ -9,7 +9,7 @@ export default function EuropeanCarFormula() {
   const productData = {
     header: 'Mobil 1™ FS European Car Formula',
     headerTextSize: '80px',
-    image: '/euro.png',
+    image: '/images/euro.png',
     paragraph: (
       <>
         The ideal choice for drivers who demand the <br />
@@ -23,7 +23,7 @@ export default function EuropeanCarFormula() {
     viscosity: '0W-40  |  5W-30  |  5w-40  |  5W-50',
     viscosityMt: '170px',
     sectionMt: '170px',
-    button1: '/redbull-button.png',
+    button1: '/images/redbull-button.png',
     button1Height: '121px',
     button1Href: '/redbullracing',
     buttonsMt: '330px',

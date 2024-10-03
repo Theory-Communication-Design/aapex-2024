@@ -9,7 +9,7 @@ export default function ExtendedPerformanceHM() {
   const productData = {
     header: (<>Mobil 1™ Extended Performance<br />High Mileage</>),
     headerTextSize: '80px',
-    image: '/extendedPerformanceHM.png',
+    image: '/images/extendedPerformanceHM.png',
     paragraph: (
       <>
         The ideal choice for drivers who demand<br />
@@ -24,7 +24,7 @@ export default function ExtendedPerformanceHM() {
     viscosity: '0W-20  |  5W-20  |  5W-30',
     viscosityMt: '150px',
     sectionMt: '100px',
-    button1: '/hagerty-button.png',
+    button1: '/images/hagerty-button.png',
     button1Height: '121px',
     button1Href: '/hagerty',
     buttonsMt: '250px',

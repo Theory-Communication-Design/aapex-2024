@@ -9,7 +9,7 @@ export default function Racing() {
   const productData = {
     header: 'Mobil 1 Racing™',
     headerTextSize: '100px',
-    image: '/racing.png',
+    image: '/images/racing.png',
     paragraph: (
       <>
         This full synthetic motor oil was specifically<br />
@@ -23,7 +23,7 @@ export default function Racing() {
     viscosity: '0W-30  |  0W-50',
     viscosityMt: '200px',
     sectionMt: '140px',
-    button1: '/redbull-button.png',
+    button1: '/images/redbull-button.png',
     button1Height: '121px',
     button1Href: '/redbullracing',
     buttonsMt: '300px',

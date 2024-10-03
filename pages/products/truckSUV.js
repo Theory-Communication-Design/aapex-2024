@@ -9,7 +9,7 @@ export default function TruckSUV() {
   const productData = {
     header: 'Mobil 1™ Truck & SUV',
     headerTextSize: '90px',
-    image: '/truckSUV.png',
+    image: '/images/truckSUV.png',
     paragraph: (
       <>
         For some of the world’s hardest-working<br />
@@ -25,8 +25,8 @@ export default function TruckSUV() {
     viscosity: '0W-20  |  5W-20  |  5W-30',
     viscosityMt: '130px',
     sectionMt: '150px',
-    button1: '/xoverland-button.png',
-    button2: '/toyota-button.png',
+    button1: '/images/xoverland-button.png',
+    button2: '/images/toyota-button.png',
     button1Height: '122px',
     button2Height: '122px',
     button1Href: '/xoverland',

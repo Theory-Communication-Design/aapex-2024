@@ -5,7 +5,7 @@ import UserActivityContext from '../../contexts/UserActivityContext';
 
 export default function Toyota() {
   const partnerData = {
-    headerImage: '/toyota-header.png',
+    headerImage: '/images/toyota-header.png',
     headerHeight: '139px',
     headerMt: '-80px',
     paragraph: (
@@ -24,8 +24,8 @@ export default function Toyota() {
     paragraphMt: '100px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/toyota-product1.png', link: '/products/truckSUV' },
-      { image: '/toyota-product2.png', link: '/products/advancedFuelEconomy' }
+      { image: '/images/toyota-product1.png', link: '/products/truckSUV' },
+      { image: '/images/toyota-product2.png', link: '/products/advancedFuelEconomy' }
     ],
     productsMt: '20px',
     subheaderTop: '160px',

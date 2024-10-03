@@ -5,7 +5,7 @@ import UserActivityContext from '../../contexts/UserActivityContext';
 
 export default function Porsche() {
   const partnerData = {
-    headerImage: '/porsche-header.png',
+    headerImage: '/images/porsche-header.png',
     headerHeight: '45px',
     headerMt: '-30px',
     paragraph: (
@@ -24,8 +24,8 @@ export default function Porsche() {
     paragraphMt: '120px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/porsche-product1.png', link: '/products/fullSynthetic' },
-      { image: '/porsche-product2.png', link: '/products/esp' }
+      { image: '/images/porsche-product1.png', link: '/products/fullSynthetic' },
+      { image: '/images/porsche-product2.png', link: '/products/esp' }
     ],
     productsMt: '30px',
     subheaderTop: '170px',

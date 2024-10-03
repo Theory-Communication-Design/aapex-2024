@@ -9,7 +9,7 @@ export default function FullSynthetic() {
   const productData = {
     header: 'Mobil 1™ Full Synthetic',
     headerTextSize: '90px',
-    image: '/fullSynthetic.png',
+    image: '/images/fullSynthetic.png',
     paragraph: (
       <>
         Engineered to provide exceptional<br />
@@ -25,8 +25,8 @@ export default function FullSynthetic() {
     viscosity: '5W-20  |  5W-30  |  15W-50',
     viscosityMt: '110px',
     sectionMt: '150px',
-    button1: '/porsche-button.png',
-    button2: '/hotwheels-button.png',
+    button1: '/images/porsche-button.png',
+    button2: '/images/hotwheels-button.png',
     button1Height: '121px',
     button2Height: '121px',
     button1Href: '/oem/porsche',
