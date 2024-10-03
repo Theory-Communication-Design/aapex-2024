@@ -1,7 +1,10 @@
 import ProductPage from 'components/ProductPage';
 import Header from 'components/Header';
+import React, { useEffect, useContext } from 'react';
+import UserActivityContext from '../../contexts/UserActivityContext';
 
 export default function ESP() {
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   const productData = {
     header: 'Mobil 1™ ESP',
@@ -28,6 +31,16 @@ export default function ESP() {
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
+
+  // Set the fullScreenVideoSrc when this page is loaded
+  useEffect(() => {
+    setFullScreenVideoSrc(productData.fullScreenVideoSrc);
+
+    return () => {
+      // Reset fullScreenVideoSrc when leaving the page
+      setFullScreenVideoSrc(null);
+    };
+  }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
 
   return (
     <div className="flex flex-col min-h-screen">

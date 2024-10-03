@@ -1,7 +1,10 @@
 import ProductPage from 'components/ProductPage';
 import Header from 'components/Header';
+import React, { useEffect, useContext } from 'react';
+import UserActivityContext from '../../contexts/UserActivityContext';
 
 export default function TruckSUV() {
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   const productData = {
     header: 'Mobil 1™ Truck & SUV',
@@ -14,7 +17,7 @@ export default function TruckSUV() {
         protection for towing, hauling and more.<br />
         Three viscosities of the advanced full synthetic<br />
         formula are available and are all designed to go<br />
-        10,000 miles between oil changes*.<br/>
+        10,000 miles between oil changes*.<br />
         <span className='text-[23.5px]'>*Protects for up to 10,000 miles or 1 year, whichever comes first</span>
       </>
     ),
@@ -32,6 +35,16 @@ export default function TruckSUV() {
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
+
+  // Set the fullScreenVideoSrc when this page is loaded
+  useEffect(() => {
+    setFullScreenVideoSrc(productData.fullScreenVideoSrc);
+
+    return () => {
+      // Reset fullScreenVideoSrc when leaving the page
+      setFullScreenVideoSrc(null);
+    };
+  }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
 
   return (
     <div className="flex flex-col min-h-screen">

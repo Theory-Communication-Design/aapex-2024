@@ -1,43 +1,52 @@
-// import ProductPage from 'components/ProductPage';
+import ProductPage from 'components/ProductPage';
 import Header from 'components/Header';
+import React, { useEffect, useContext } from 'react';
+import UserActivityContext from '../../contexts/UserActivityContext';
 
 export default function Supercar() {
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
-  // const productData = {
-  //   header: 'Mobil 1™ Extended Performance',
-  //   headerTextSize: '80px',
-  //   image: '/extendedPerformance.png',
-  //   paragraph: (
-  //     <>
-  //       The ideal choice for drivers who<br />
-  //       demand higher endurance and<br />
-  //       long-lasting protection for their engines.<br />
-  //       This full synthetic motor oil is designed to<br />
-  //       deliver outstanding wear protection, cleaning<br />
-  //       power and overall performance for up to 20,000<br/>
-  //       miles between oil changes*.<br/>
-  //       <span className='text-[23.5px]'>*Protects for up to 20,000 miles or 1 year, whichever comes first</span>
-  //     </>
-  //   ),
-  //   paragraphTextSize: '45px',
-  //   viscosity: '0W-20  |  5W-20  |  5W-30  |  10W-30',
-  //   viscosityMt: '80px',
-  //   sectionMt: '150px',
-  //   button1: '/xoverland-button.png',
-  //   button2: '/steer-button.png',
-  //   button1Height: '122px',
-  //   button2Height: '122px',
-  //   button1Href: '/xoverland',
-  //   button2Href: '/steer',
-  //   buttonsMt: '180px',
-  //   videoSrc: '/videos/preview.mp4',
-  //   fullScreenVideoSrc: '/videos/testVideo.mp4'
-  // };
+  const productData = {
+    header: 'Mobil 1™ Supercar',
+    headerTextSize: '90px',
+    image: '/supercar.png',
+    paragraph: (
+      <>
+        For some of the highest-performing<br />
+        sports cars out there, Mobil 1™ Supercar is<br />
+        specifically engineered to handle the extreme<br />
+        demands of track days and everyday driving.<br />
+        This formula delivers exceptional protection,<br />
+        performance and longevity for your turbocharged,<br />
+        supercharged or naturally aspirated engine.
+      </>
+    ),
+    paragraphTextSize: '40px',
+    viscosity: '0W-40  |  5W-50',
+    viscosityMt: '150px',
+    sectionMt: '150px',
+    button1: '/gm-button.png',
+    button1Height: '121px',
+    button1Href: '/oem/generalMotors',
+    buttonsMt: '250px',
+    videoSrc: '/videos/preview.mp4',
+    fullScreenVideoSrc: '/videos/testVideo.mp4'
+  };
+
+  // Set the fullScreenVideoSrc when this page is loaded
+  useEffect(() => {
+    setFullScreenVideoSrc(productData.fullScreenVideoSrc);
+
+    return () => {
+      // Reset fullScreenVideoSrc when leaving the page
+      setFullScreenVideoSrc(null);
+    };
+  }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      {/* <ProductPage
+      <ProductPage
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
@@ -56,7 +65,7 @@ export default function Supercar() {
         preview={productData.preview}
         videoSrc={productData.videoSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
-      /> */}
+      />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import PartnerPage from 'components/PartnerPage';
 import Header from 'components/Header';
+import React, { useEffect, useContext } from 'react';
+import UserActivityContext from '../contexts/UserActivityContext';
 
 export default function HotWheels() {
   const partnerData = {
@@ -30,6 +32,19 @@ export default function HotWheels() {
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
+
+  // Get the context to update fullScreenVideoSrc state
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
+
+  useEffect(() => {
+    // Update the fullScreenVideoSrc when this page is loaded
+    setFullScreenVideoSrc(partnerData.fullScreenVideoSrc);
+
+    return () => {
+      // Reset fullScreenVideoSrc when leaving the page
+      setFullScreenVideoSrc(null);
+    };
+  }, [setFullScreenVideoSrc, partnerData.fullScreenVideoSrc]);
 
   return (
     <div className="flex flex-col min-h-screen">

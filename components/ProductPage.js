@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext, useEffect } from 'react';
+import UserActivityContext from '../contexts/UserActivityContext';
 
 const ProductPage = ({
   header,
@@ -27,6 +28,16 @@ const ProductPage = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const fullScreenVideoRef = useRef(null);
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
+
+  // Set the fullScreenVideoSrc when the modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      setFullScreenVideoSrc(fullScreenVideoSrc);
+    } else {
+      setFullScreenVideoSrc(null);
+    }
+  }, [isModalOpen, fullScreenVideoSrc, setFullScreenVideoSrc]);
 
   const handlePlayClick = () => {
     setIsModalOpen(true);
@@ -132,21 +143,14 @@ const ProductPage = ({
         </div>
       </div>
 
+      {/* Modal for Full-Screen Video */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
-          <video
-            ref={fullScreenVideoRef}
-            controls={false}
-            muted
-            className="w-full h-full object-contain"
-          >
+          <video ref={fullScreenVideoRef} controls={false} muted className="w-full h-full object-contain">
             <source src={fullScreenVideoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <button
-            onClick={handleCloseModal}
-            className="absolute top-5 right-5 text-white text-[40px]"
-          >
+          <button onClick={handleCloseModal} className="absolute top-5 right-5 text-white text-[40px]">
             ✕
           </button>
         </div>

@@ -1,7 +1,10 @@
 import ProductPage from 'components/ProductPage';
 import Header from 'components/Header';
+import React, { useEffect, useContext } from 'react';
+import UserActivityContext from '../../contexts/UserActivityContext';
 
 export default function FullSynthetic() {
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   const productData = {
     header: 'Mobil 1™ Full Synthetic',
@@ -14,7 +17,7 @@ export default function FullSynthetic() {
         wide range of vehicles, this advanced<br />
         formula offers superior wear, protection,<br />
         cleaning power, and overall engine health<br />
-        for drivers who demand the best in engine<br/>
+        for drivers who demand the best in engine<br />
         protection and performance.
       </>
     ),
@@ -23,18 +26,25 @@ export default function FullSynthetic() {
     viscosityMt: '110px',
     sectionMt: '150px',
     button1: '/porsche-button.png',
-    button2: '/toyota-button.png',
-    button3: '/hotwheels-button.png',
-    button1Height: '105px',
-    button2Height: '105px',
-    button3Height: '105px',
+    button2: '/hotwheels-button.png',
+    button1Height: '121px',
+    button2Height: '121px',
     button1Href: '/oem/porsche',
-    button2Href: '/oem/toyota',
-    button3Href: '/hotwheels',
+    button2Href: '/hotwheels',
     buttonsMt: '220px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
+
+  // Set the fullScreenVideoSrc when this page is loaded
+  useEffect(() => {
+    setFullScreenVideoSrc(productData.fullScreenVideoSrc);
+
+    return () => {
+      // Reset fullScreenVideoSrc when leaving the page
+      setFullScreenVideoSrc(null);
+    };
+  }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -51,13 +61,10 @@ export default function FullSynthetic() {
         sectionMt={productData.sectionMt}
         button1={productData.button1}
         button2={productData.button2}
-        button3={productData.button3}
         button1Height={productData.button1Height}
         button2Height={productData.button2Height}
-        button3Height={productData.button3Height}
         button1Href={productData.button1Href}
         button2Href={productData.button2Href}
-        button3Href={productData.button3Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
