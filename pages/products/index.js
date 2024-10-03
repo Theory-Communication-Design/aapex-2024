@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from 'components/Header';
 
 const menuItems = [
-  { text: 'Mobil 1', link: '/products/mobil1' },
+  { text: 'FS European Car Formula', link: '/products/europeanCarFormula' },
   { text: 'ESP', link: '/products/esp' },
   { text: 'Mobil 1 Classic Car', link: '/products/classicCar' },
   { text: 'Advanced Fuel Economy', link: '/products/advancedFuelEconomy' },
