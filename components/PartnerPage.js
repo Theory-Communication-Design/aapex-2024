@@ -106,7 +106,7 @@ const PartnerPage = ({
         {/* Play Button Icon */}
         <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
           <img
-            src="/image/play-icon.png"
+            src="/images/play-icon.png"
             alt="Play Icon"
             className="w-[356px] h-auto cursor-pointer z-10"
             onClick={handlePlayClick}
