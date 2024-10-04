@@ -1,5 +1,7 @@
 # AAPEX-2024 Project
 
+**⚠️ Important:** This project only runs on Windows computers.
+
 Welcome! This project was created specifically for the AAPEX 2024 event. Please follow the instructions below to run the project on your local machine.
 
 ## Running the Project
