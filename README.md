@@ -6,7 +6,7 @@ Welcome! This project was created specifically for the AAPEX 2024 event. Please 
 
 1. **Locate the `CLICK ME!` File**  
    After unzipping the folder, you should see a file named `CLICK ME!.bat`. This is a Windows batch file that starts the local server.
-   - This batch file will launch the project using **Mongoose**.
+   - This batch file will launch the project using a program called **Mongoose**.
 
 3. **Run the `CLICK ME!` File**  
    Double-click the `CLICK ME!` file to start the local server.  
