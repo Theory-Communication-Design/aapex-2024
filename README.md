@@ -9,7 +9,7 @@ Welcome! This project was created specifically for the AAPEX 2024 event. Please 
 
 2. **Run the `CLICK ME!` File**  
    Double-click the `CLICK ME!` file to start the local server.  
-   - If a security prompt appears with options such as "Don't run" or "Run", please select **Run**.
+   - If a security prompt appears, you may see the option "Don't run". Go ahead and click "More info" instead. This will now give you the option "Run anyways", please select **Run anyways**.
 
 3. **Wait for the Application to Start**  
    Two Windows PowerShell windows will open. Please leave both of them open while the application is running.  
