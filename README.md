@@ -1,118 +1,29 @@
 # AAPEX-2024 Project
 
-This is a [Next.js](https://nextjs.org/) project for the AAPEX 2024 event, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome! This project was created specifically for the AAPEX 2024 event. Please follow the instructions below to run the project on your local machine.
 
-## Getting Started
+## Running the Project
 
-To open this project and run it locally, follow the instructions below:
+1. **Locate the `CLICK ME!` File**  
+   After unzipping the folder, you should see a file named `CLICK ME!.bat`. This is a Windows batch file that starts the local server.
 
-### 1. Install Git
+2. **Run the `CLICK ME!` File**  
+   Double-click the `CLICK ME!` file to start the local server.  
+   - If a security prompt appears with options such as "Don't run" or "Run", please select **Run**.
 
-If Git is not already installed on your system, follow these steps to install it:
+3. **Wait for the Application to Start**  
+   Two Windows PowerShell windows will open. Please leave both of them open while the application is running.  
+   - It may take 1-2 minutes for the application to start.
+   - Once started, the project will automatically open in your preferred browser with the URL `localhost:8000`.
 
-- **Windows**:
-  1. Download Git for Windows from the official website: [https://git-scm.com/](https://git-scm.com/).
-  2. Run the installer and follow the instructions.
-  3. **Ensure you select the option to "Add Git to PATH"** during installation so that Git can be used in PowerShell or Command Prompt.
-  4. Once installed, open PowerShell or Command Prompt and verify Git is working by running:
+4. **Adjust the Screen Size (if needed)**  
+   This project is optimized for a screen resolution of 3,840 x 2,160. If you are not using a screen with this resolution:
+   - Right-click anywhere on the site and select **Inspect** to open Chrome DevTools.
+   - Click the second button at the top left corner that looks like a square and small rectangle (labeled "Toggle device toolbar").
+   - From the dropdown, select **Responsive**.
+   - Enter the custom size of `3,840 x 2,160` to match the intended screen size.
 
-     ```bash
-     git --version
-     ```
+5. **Close the Project**  
+   Once finished, close all related windows to stop the application.
 
-- **Mac**:
-  1. Open the Terminal and run:
-
-     ```bash
-     git --version
-     ```
-     If Git is not installed, it will prompt you to install it via Xcode Command Line Tools. Follow the prompts.
-
-### 2. Install Node.js and npm
-
-If Node.js is not installed on your system, follow these steps to install it:
-
-- **Windows and Mac**:
-  1. Download Node.js from the official website: [https://nodejs.org/](https://nodejs.org/).
-  2. Choose the **LTS version** (recommended for stability).
-  3. Run the installer and follow the setup instructions. Make sure to enable the option to add Node.js to the system’s PATH.
-  4. After installation, verify that Node.js and npm are installed correctly by running the following commands in PowerShell (Windows) or Terminal (Mac):
-
-     ```bash
-     node -v
-     npm -v
-     ```
-     You should see the version numbers of both Node.js and npm.
-
-### 3. Clone the repository
-
-Once Git is installed, clone the repository to your local machine:
-
-```bash
-git clone https://github.com/Theory-Communication-Design/aapex-2024.git
-```
-
-### 4. Navigate to the project directory
-
-Move into the project directory after cloning:
-
-```bash
-cd aapex-2024
-```
-
-### 5. Install dependencies
-
-Install the required packages and dependencies for the project:
-
-```bash
-npm install
-```
-or
-```bash
-yarn install
-```
-or
-```bash
-pnpm install
-```
-
-### 6. Run the development server
-
-Once the dependencies are installed, you can start the development server:
-
-```bash
-npm run dev
-```
-or
-```bash
-yarn dev
-```
-or
-```bash
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
-
-### Editing the Project
-
-You can start editing the page by modifying the files inside the `pages` directory. The page auto-updates as you make changes.
-
-## Video Player
-
-The project includes interactive video players. The videos are stored in the `public/videos` directory. To see them, click the buttons on the main page, which will display different videos.
-
-Ensure that any video files are placed in `public/videos` so they can be accessed properly.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Deployment
-
-If you need to deploy this project, follow Next.js' deployment documentation: [Next.js Deployment](https://nextjs.org/docs/deployment).
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you have any questions or encounter any issues, please reach out to the Theory team.
