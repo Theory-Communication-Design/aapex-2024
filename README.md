@@ -23,7 +23,12 @@ Welcome! This project was created specifically for the AAPEX 2024 event. Please 
    - From the dropdown, select **Responsive**.
    - Enter the custom size of `3,840 x 2,160` to match the intended screen size.
 
-5. **Close the Project**  
+5. **Make the Window Fullscreen (Windows)**  
+   To get the best experience, make the browser window fullscreen. You can do this using one of the following methods:
+   - **Method 1:** Hold down the `Fn` key and press the `F11` key.  
+   - **Method 2:** Click the three vertical dots in the top right corner of your browser (next to your profile icon) and select **Full Screen** from next to the zoom options.
+
+6. **Close the Project**  
    Once finished, close all related windows to stop the application.
 
 If you have any questions or encounter any issues, please reach out to the Theory team.
