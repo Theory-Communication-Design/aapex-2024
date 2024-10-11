@@ -21,7 +21,7 @@ export default function ESP() {
       </>
     ),
     paragraphTextSize: '40px',
-    viscosity: '0W-40',
+    viscosity: '0W-20 | 0W-30 | 0W-40  | 5W-30',
     viscosityMt: '170px',
     sectionMt: '150px',
     button1: '/images/porsche-button1.png',

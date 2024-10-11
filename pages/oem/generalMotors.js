@@ -15,7 +15,7 @@ export default function GeneralMotors() {
         synthetic motor oil is the factory fill and recommended oil for numerous GM<br />
         vehicles, including the iconic Chevrolet Corvette. With nearly 1 million Corvettes<br />
         rolling off the line factory-filled, Mobil 1™ Supercar was developed to capture the<br />
-        rue essence of our performance heritage. Mobil 1 motor oils are also the Official<br />
+        true essence of our performance heritage. Mobil 1 motor oils are also the Official<br />
         Motor Oil of Chevrolet Performance, which features multiple custom crate engine<br />
         builds used as display vehicles for various Retail needs. These collaborations allow<br />
         Retailers to take advantage of the trust and loyalty associated with both powerful<br />

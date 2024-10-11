@@ -150,7 +150,7 @@ const ProductPage = ({
             <source src={fullScreenVideoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <button onClick={handleCloseModal} className="absolute top-5 right-5 text-white text-[40px]">
+          <button onClick={handleCloseModal} className="absolute top-7 right-16 text-white text-[100px]">
             ✕
           </button>
         </div>

@@ -131,7 +131,7 @@ const PartnerPage = ({
           {/* Close button for the modal */}
           <button
             onClick={handleCloseModal}
-            className="absolute top-5 right-5 text-white text-[40px]"
+            className="absolute top-7 right-16 text-white text-[100px]"
           >
             ✕
           </button>

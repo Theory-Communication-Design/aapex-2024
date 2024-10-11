@@ -2,16 +2,16 @@ import Link from 'next/link';
 import Header from 'components/Header';
 
 const menuItems = [
-  { text: 'FS European Car Formula', link: '/products/europeanCarFormula' },
-  { text: 'ESP', link: '/products/esp' },
-  { text: 'Mobil 1 Classic Car', link: '/products/classicCar' },
-  { text: 'Advanced Fuel Economy', link: '/products/advancedFuelEconomy' },
-  { text: 'Extended Performance High Mileage', link: '/products/extendedPerformanceHM' },
-  { text: 'Supercar', link: '/products/supercar' },
+  { text: 'Mobil 1™ Advanced Full Synthetic', link: '/products/fullSynthetic' },
+  { text: 'Mobil 1™ Classic Car', link: '/products/classicCar' },
   { text: 'Truck & SUV', link: '/products/truckSUV' },
-  { text: 'Mobil 1 Full Synthetic', link: '/products/fullSynthetic' },
+  { text: 'Advanced Fuel Economy', link: '/products/advancedFuelEconomy' },
+  { text: 'Mobil 1™ Racing', link: '/products/racing' },
+  { text: 'Supercar', link: '/products/supercar' },
+  { text: 'Extended Performance High Mileage', link: '/products/extendedPerformanceHM' },
   { text: 'Extended Performance', link: '/products/extendedPerformance' },
-  { text: 'Mobil 1 Racing', link: '/products/racing' },
+  { text: 'ESP', link: '/products/esp' },
+  { text: 'FS European Car Formula', link: '/products/europeanCarFormula' },
 ];
 
 export default function Products() {
@@ -36,7 +36,7 @@ export default function Products() {
       {/* Content Section */}
       <div className="relative z-10 flex-grow flex flex-col justify-center items-center">
         <p className="text-white text-center text-[70px] pb-[100px] mt-[-50px] font-emprintSemiBold">
-          Learn more about specific Mobil 1 products by clicking below.
+          Learn more about specific Mobil 1™ products by clicking below.
         </p>
 
         {/* Menu Buttons */}

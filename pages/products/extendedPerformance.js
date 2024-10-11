@@ -18,7 +18,7 @@ export default function ExtendedPerformance() {
         This full synthetic motor oil is designed to<br />
         deliver outstanding wear protection, cleaning<br />
         power and overall performance for up to 20,000<br />
-        miles between oil changes*.<br />
+        miles between oil changes.*<br />
         <span className='text-[23.5px]'>*Protects for up to 20,000 miles or 1 year, whichever comes first</span>
       </>
     ),

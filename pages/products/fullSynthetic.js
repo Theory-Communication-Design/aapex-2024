@@ -7,29 +7,29 @@ export default function FullSynthetic() {
   const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   const productData = {
-    header: 'Mobil 1™ Full Synthetic',
-    headerTextSize: '90px',
+    header: 'Mobil 1™ Advanced Full Synthetic',
+    headerTextSize: '85px',
     image: '/images/fullSynthetic.png',
     paragraph: (
       <>
-        Engineered to provide exceptional<br />
-        performance and protection for a<br />
-        wide range of vehicles, this advanced<br />
-        formula offers superior wear, protection,<br />
-        cleaning power, and overall engine health<br />
-        for drivers who demand the best in engine<br />
-        protection and performance.
+        Engineered to help extend engine<br />
+        life, even in severe driving conditions.<br />
+        This advanced formula offers superior<br />
+        wear protection, cleaning power, and<br />
+        overall engine health for drivers who<br />
+        demand the best in engine protection<br/>
+        and performance.
       </>
     ),
     paragraphTextSize: '45px',
-    viscosity: '5W-20  |  5W-30  |  15W-50',
+    viscosity: '5W-20  |  5W-30  |  10W-30  |  15W-50',
     viscosityMt: '110px',
     sectionMt: '150px',
-    button1: '/images/porsche-button.png',
+    button1: '/images/rocketLeague-button.png',
     button2: '/images/hotwheels-button.png',
     button1Height: '121px',
     button2Height: '121px',
-    button1Href: '/oem/porsche',
+    button1Href: '/rocketleague',
     button2Href: '/hotwheels',
     buttonsMt: '220px',
     videoSrc: '/videos/preview.mp4',

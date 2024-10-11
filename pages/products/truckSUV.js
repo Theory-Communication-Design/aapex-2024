@@ -17,7 +17,7 @@ export default function TruckSUV() {
         protection for towing, hauling and more.<br />
         Three viscosities of the advanced full synthetic<br />
         formula are available and are all designed to go<br />
-        10,000 miles between oil changes*.<br />
+        10,000 miles between oil changes.*<br />
         <span className='text-[23.5px]'>*Protects for up to 10,000 miles or 1 year, whichever comes first</span>
       </>
     ),
