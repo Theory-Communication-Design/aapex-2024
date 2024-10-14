@@ -24,7 +24,7 @@ export default function Porsche() {
     paragraphMt: '120px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/images/porsche-product1.png', link: '/products/fullSynthetic' },
+      { image: '/images/porsche-product1.png', link: '/products/europeanCarFormula' },
       { image: '/images/porsche-product2.png', link: '/products/esp' }
     ],
     productsMt: '30px',

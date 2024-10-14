@@ -23,7 +23,7 @@ export default function EuropeanCarFormula() {
     viscosity: '0W-40  |  5W-30  |  5W-40  |  5W-50',
     viscosityMt: '170px',
     sectionMt: '170px',
-    button1: '/images/redbull-button.png',
+    button1: '/images/porsche-button1.png',
     button1Height: '121px',
     button1Href: '/redbullracing',
     buttonsMt: '330px',
