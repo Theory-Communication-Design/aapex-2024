@@ -25,7 +25,7 @@ export default function EuropeanCarFormula() {
     sectionMt: '170px',
     button1: '/images/porsche-button1.png',
     button1Height: '121px',
-    button1Href: '/redbullracing',
+    button1Href: '/oem/porsche',
     buttonsMt: '330px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'

@@ -24,7 +24,7 @@ export default function RocketLeague() {
     paragraphMt: '90px',
     paragraphTextSize: '40px',
     products: [
-      { image: '/images/rocketLeague-product1.png', link: '/products/advancedFuelEconomy/' }
+      { image: '/images/rocketLeague-product1.png', link: '/products/fullSynthetic/' }
     ],
     productsMt: '0px',
     subheaderTop: '130px',
