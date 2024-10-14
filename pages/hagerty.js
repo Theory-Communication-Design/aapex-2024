@@ -10,15 +10,15 @@ export default function Hagerty() {
     headerMt: '-80px',
     paragraph: (
       <>
-        The partnership between Hagerty and the Mobil 1™ brand is dedicated<br />
+        The relationship between Hagerty and the Mobil 1™ brand is dedicated<br />
         to preserving automotive history and culture, protecting iconic vehicles for<br />
-        future generations by providing the essential care classic cars deserve. This<br />
-        collaboration supports the RADwood show series, which offers an exclusive<br />
-        opportunity to celebrate classic cars from the 80s and 90s, with thousands of<br />
-        attendees from all over the country. It has also offered the opportunity for Rod<br />
-        Emory to participate in Hagerty events and promote Mobil 1 products, thus reinforcing<br />
-        both brands’ ideologies and contributing to social content. Retailers can benefit from the<br />
-        passionate market this partnership taps into.
+        future generations by providing the essential care classic cars deserve. Together<br />
+        we developed and premiered the documentary “Racing with Giants: Porsche at<br />
+        Le Mans”, narrated by Le Mans podium finisher Patrick Dempsey, which currently<br />
+        sits at over 900K views on YouTube. We also collaborate on “The Driver’s Seat”, a series<br />
+        with 3.9M views hosted by Henry Catchpole, offering a look at some of the world's most<br />
+        exciting cars. Retailers can benefit from the passionate market this sponsorship taps into<br />
+        through experiences and content.
       </>
     ),
     paragraphMt: '100px',

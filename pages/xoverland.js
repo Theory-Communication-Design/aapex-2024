@@ -12,14 +12,14 @@ export default function XOverland() {
       <>
         XOverland is a decade-plus partner of Toyota producing cinematic<br />
         adventure-themed overlanding content with authentic individuals. In the<br />
-        network’s Creator Series, extraordinary people doing extraordinary things<br />
-        have earned over a million hours viewed to date. Content includes series like<br />
-        Desk to Glory, We Will Roam and Bound for Nowhere, in which overlanders<br />
-        document their global adventures with a unique twist. Other programs include Roam<br />
-        Overland in which an African overlander rediscovers his homeland, and Gon Cookin’,<br />
-        highlighting a guest’s favorite dish adapted for camping. The Mobil 1™ brand shares the<br />
-        same spirit of adventure, and a Retailer can reap the rewards of showcasing individuals<br />
-        overcoming the harshest conditions.
+        network’s Creator Series driven by Mobil 1™, ordinary people doing extraordinary<br />
+        things have earned over a million hours viewed to date. Content includes series like<br />
+        <i>Desk to Glory</i>, <i>We Will Roam</i>, and <i>Bound for Nowhere</i>, in which overlanders document<br />
+        their global adventures with a unique twist. Other programs include <i>Roam Overland</i> in which<br />
+        an African overlander rediscovers his homeland, and <i>Gon Cookin’</i>, highlighting a guest’s favorite<br />
+        dish adapted for camping. The Mobil 1™ brand shares the same spirit of adventure. As a Retailer,<br />
+        you have the opportunity to align yourself with a demographic of outdoor enthusiasts who put<br />
+        their vehicles to the test.
       </>
     ),
     paragraphMt: '0px',

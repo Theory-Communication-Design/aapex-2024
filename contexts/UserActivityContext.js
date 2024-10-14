@@ -1,4 +1,3 @@
-// contexts/UserActivityContext.js
 import React, { createContext, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -10,31 +9,30 @@ export const UserActivityProvider = ({ children }) => {
   const router = useRouter();
 
   useEffect(() => {
-    const resetActivityTimer = () => setLastActivityTime(Date.now());
+    const resetActivityTimer = () => {
+      setLastActivityTime(Date.now());
+    };
 
     const handleInactivity = () => {
-      // Only redirect to index.js if not on the Landing page and no full-screen video is playing
-      if (
-        !fullScreenVideoSrc &&
-        Date.now() - lastActivityTime >= 60000 &&
-        router.pathname !== '/'
-      ) {
+      const currentPath = router.pathname;
+      const timeoutDuration = (currentPath === '/home' || currentPath === '/products') ? 120000 : 60000;
+
+      // Redirect if inactivity exceeds the timeoutDuration and user is not on the landing page
+      if (Date.now() - lastActivityTime >= timeoutDuration && currentPath !== '/') {
         router.push('/');
       }
     };
 
-    // Add event listeners to detect user interactions
     const events = ['click', 'mousemove', 'keypress', 'scroll'];
     events.forEach((event) => window.addEventListener(event, resetActivityTimer));
 
-    // Check for inactivity every second
     const intervalId = setInterval(handleInactivity, 1000);
 
     return () => {
       events.forEach((event) => window.removeEventListener(event, resetActivityTimer));
       clearInterval(intervalId);
     };
-  }, [lastActivityTime, fullScreenVideoSrc, router]);
+  }, [lastActivityTime, router]);
 
   return (
     <UserActivityContext.Provider value={{ fullScreenVideoSrc, setFullScreenVideoSrc }}>

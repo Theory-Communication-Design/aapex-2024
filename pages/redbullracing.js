@@ -10,14 +10,16 @@ export default function RedBullRacing() {
     headerMt: '-80px',
     paragraph: (
       <>
-        Our partnership with this high-performance team is a testament to our<br />
+        Our sponsorship with this high-performance team is a testament to our<br />
         commitment to pushing the boundaries of lubricant technology. Together,<br />
         Red Bull Racing and the Mobil 1™ brand strive to include consumers in the<br />
-        high-adrenaline, high-achievement world of Formula 1. The Pit Stop tour has<br />
-        multiple stops around the country, inviting consumers to try their hand at being<br />
-        art of a pit crew. Show runs allow spectators to witness the power of the brands up<br />
-        close and personal. Through this partnership, Retailers have the opportunity to keep<br />
-        consumers engaged with first-person experiences.
+        high-adrenaline, high-achievement world of Formula 1. The Pit Stop tour has multiple<br />
+        stops around the country, inviting consumers to try their hand at being part of a pit crew.<br />
+        Show runs allow spectators to witness the power of the brands up close and personal.<br />
+        Through this sponsorship, Retailers have the opportunity to engage consumers through unique<br />
+        and exciting promotions. Promotions can be customized to fit each retailer go to market strategy<br/>
+        and can include everything from Oracle Red Bull Racing branded merchandise to exclusive tours<br/>
+        of the ORBR factory in London, UK.
       </>
     ),
     paragraphMt: '90px',
@@ -25,8 +27,8 @@ export default function RedBullRacing() {
     products: [
       { image: '/images/redbull-product1.png', link: '/products/racing/' }
     ],
-    productsMt: '50px',
-    subheaderTop: '170px',
+    productsMt: '-60px',
+    subheaderTop: '80px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };

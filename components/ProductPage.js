@@ -50,6 +50,11 @@ const ProductPage = ({
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    setFullScreenVideoSrc(null); // Reset fullScreenVideoSrc when the video ends
+
+    // Reset inactivity timer to give the user another minute after the modal closes
+    window.dispatchEvent(new Event('mousemove')); // Trigger a user activity event to reset the timer
+
     if (fullScreenVideoRef.current) {
       fullScreenVideoRef.current.pause();
       fullScreenVideoRef.current.currentTime = 0;
@@ -66,7 +71,9 @@ const ProductPage = ({
           backgroundPosition: 'top',
         }}
       >
-        <h1 className="font-emprintSemiBold" style={{ fontSize: headerTextSize, lineHeight: headerLineHeight }}>{header}</h1>
+        <h1 className="font-emprintSemiBold" style={{ fontSize: headerTextSize, lineHeight: headerLineHeight }}>
+          {header}
+        </h1>
         <div className="flex items-start" style={{ marginTop: sectionMt }}>
           <img
             src={image}
@@ -121,7 +128,7 @@ const ProductPage = ({
         </div>
       </div>
 
-      <div className="absolute right-0  h-full">
+      <div className="absolute right-0 h-full">
         <video
           autoPlay
           loop
@@ -146,7 +153,18 @@ const ProductPage = ({
       {/* Modal for Full-Screen Video */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
-          <video ref={fullScreenVideoRef} controls={false} muted className="w-full h-full object-contain">
+          <video
+            ref={fullScreenVideoRef}
+            controls={false}
+            muted
+            className="w-full h-full object-contain"
+            onEnded={handleCloseModal}
+            onLoadedMetadata={() => {
+              if (fullScreenVideoRef.current) {
+                fullScreenVideoRef.current.play();
+              }
+            }}
+          >
             <source src={fullScreenVideoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

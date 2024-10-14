@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState, useRef, useContext } from 'react';
+import { useState, useRef, useContext, useEffect } from 'react';
 import UserActivityContext from '../contexts/UserActivityContext';
 
 const PartnerPage = ({
@@ -17,9 +17,8 @@ const PartnerPage = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const fullScreenVideoRef = useRef(null);
-  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext); // Correctly destructure here
 
-  // Function to handle play button click
   const handlePlayClick = () => {
     setIsModalOpen(true);
     setFullScreenVideoSrc(fullScreenVideoSrc); // Update fullScreenVideoSrc when the video starts
@@ -31,10 +30,12 @@ const PartnerPage = ({
     }, 100);
   };
 
-  // Function to close the modal (and stop video)
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setFullScreenVideoSrc(null); // Reset fullScreenVideoSrc when video ends
+
+    // Reset inactivity timer to give the user another minute after the modal closes
+    window.dispatchEvent(new Event('mousemove')); // Trigger a user activity event to reset the timer
 
     if (fullScreenVideoRef.current) {
       fullScreenVideoRef.current.pause();
@@ -124,6 +125,11 @@ const PartnerPage = ({
             muted
             className="w-full h-full object-contain"
             onEnded={handleCloseModal}
+            onLoadedMetadata={() => {
+              if (fullScreenVideoRef.current) {
+                fullScreenVideoRef.current.play();
+              }
+            }}
           >
             <source src={fullScreenVideoSrc} type="video/mp4" />
             Your browser does not support the video tag.

@@ -13,13 +13,13 @@ export default function HotWheels() {
         Since 1968, Hot Wheels has been a global phenomenon capturing the<br />
         imagination of both kids and adults. The Mobil 1™ brand shares in the<br />
         excitement of the limitless possibilities Hot Wheels inspires. As part of our<br />
-        partnership, we have worked alongside well-known automotive personalities<br />
-        Patrick Long and Jay Leno to develop projects like Long’s Porsche 944 Dirtmeister<br />
-        and the Twin Mill with Jay Leno. Additionally, since 2018, the Hot Wheels Legends<br />
-        Tour has visited several major cities each year. A promotional event and competition, the<br />
-        tour celebrates custom car culture and provides enthusiasts a platform to showcase their<br />
-        unique, hand-crafted builds. These programs, as well as numerous contests and giveaways,<br />
-        provide Retailers with a world of fun and imaginative opportunities.
+        sponsorship, we have worked alongside well-known automotive personalities<br />
+        like Patrick Long and Ryan Tuerck to develop projects like Long’s Mobil 1 Porsche<br />
+        Dirtmeister 914 Safari, and Tuerck’s Toyota Stout Drift Truck. Since 2018, the Hot<br />
+        Wheels Legends Tour presented by Mobil 1 has celebrated custom car culture and<br />
+        offered enthusiasts a platform to showcase their unique, hand-crafted builds.These<br />
+        programs, as well as numerous contests and giveaways, provide Retailers with a world<br/>
+        of fun and imaginative opportunities for all demographics.
       </>
     ),
     paragraphMt: '90px',
