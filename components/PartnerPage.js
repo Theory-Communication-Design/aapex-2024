@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState, useRef, useContext, useEffect } from 'react';
+import { useState, useRef, useContext } from 'react';
 import UserActivityContext from '../contexts/UserActivityContext';
 
 const PartnerPage = ({
@@ -17,11 +17,11 @@ const PartnerPage = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const fullScreenVideoRef = useRef(null);
-  const { setFullScreenVideoSrc } = useContext(UserActivityContext); // Correctly destructure here
+  const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   const handlePlayClick = () => {
     setIsModalOpen(true);
-    setFullScreenVideoSrc(fullScreenVideoSrc); // Update fullScreenVideoSrc when the video starts
+    setFullScreenVideoSrc(fullScreenVideoSrc);
 
     setTimeout(() => {
       if (fullScreenVideoRef.current) {
@@ -32,10 +32,9 @@ const PartnerPage = ({
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setFullScreenVideoSrc(null); // Reset fullScreenVideoSrc when video ends
+    setFullScreenVideoSrc(null);
 
-    // Reset inactivity timer to give the user another minute after the modal closes
-    window.dispatchEvent(new Event('mousemove')); // Trigger a user activity event to reset the timer
+    window.dispatchEvent(new Event('mousemove'));
 
     if (fullScreenVideoRef.current) {
       fullScreenVideoRef.current.pause();
@@ -69,12 +68,12 @@ const PartnerPage = ({
           {paragraph}
         </p>
 
-        {/* Subheader with relative positioning */}
+        {/* Subheader */}
         <h2 className="relative text-[70px] font-emprintSemiBold" style={{ top: subheaderTop }}>
           Feature Products:
         </h2>
 
-        {/* Product Images as Buttons */}
+        {/* Product Images */}
         <div className="flex space-x-[75px]" style={{ marginTop: productsMt }}>
           {products.map((product, index) => (
             <Link key={index} href={product.link} passHref>
@@ -91,20 +90,21 @@ const PartnerPage = ({
       </div>
 
       {/* Right Side - Video */}
-      <div className="absolute right-0  h-full">
+      <div className="absolute right-0 h-full">
         {/* Background looping video */}
         <video
           autoPlay
           loop
           muted
           playsInline
+          preload="auto"
           className="w-full h-full object-cover"
         >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Play Button Icon */}
+        {/* Play Button */}
         <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
           <img
             src="/images/play-icon.png"
@@ -116,7 +116,7 @@ const PartnerPage = ({
         </div>
       </div>
 
-      {/* Modal for fullscreen video */}
+      {/* Modal for Fullscreen Video */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
           <video
@@ -134,11 +134,7 @@ const PartnerPage = ({
             <source src={fullScreenVideoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          {/* Close button for the modal */}
-          <button
-            onClick={handleCloseModal}
-            className="absolute top-7 right-16 text-white text-[100px]"
-          >
+          <button onClick={handleCloseModal} className="absolute top-7 right-16 text-white text-[100px]">
             ✕
           </button>
         </div>

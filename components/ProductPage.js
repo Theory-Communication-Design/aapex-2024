@@ -30,7 +30,6 @@ const ProductPage = ({
   const fullScreenVideoRef = useRef(null);
   const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
-  // Set the fullScreenVideoSrc when the modal is open
   useEffect(() => {
     if (isModalOpen) {
       setFullScreenVideoSrc(fullScreenVideoSrc);
@@ -50,10 +49,9 @@ const ProductPage = ({
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setFullScreenVideoSrc(null); // Reset fullScreenVideoSrc when the video ends
+    setFullScreenVideoSrc(null);
 
-    // Reset inactivity timer to give the user another minute after the modal closes
-    window.dispatchEvent(new Event('mousemove')); // Trigger a user activity event to reset the timer
+    window.dispatchEvent(new Event('mousemove'));
 
     if (fullScreenVideoRef.current) {
       fullScreenVideoRef.current.pause();
@@ -63,6 +61,7 @@ const ProductPage = ({
 
   return (
     <div className="relative min-h-screen">
+      {/* Left Side */}
       <div
         className="pl-[225px] pt-[180px] absolute top-0 left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
         style={{
@@ -128,12 +127,14 @@ const ProductPage = ({
         </div>
       </div>
 
+      {/* Right Side - Video */}
       <div className="absolute right-0 h-full">
         <video
           autoPlay
           loop
           muted
           playsInline
+          preload="auto"
           className="w-full h-full object-cover"
         >
           <source src={videoSrc} type="video/mp4" />

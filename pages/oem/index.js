@@ -9,7 +9,7 @@ export default function OEM() {
 
       {/* Image Stack */}
       <div className="flex flex-col items-center gap-[20px]">
-        <Link href="/oem/toyota" passHref>
+        <Link href="/oem/toyota" passHref prefetch={true}>
           <img
             src="/images/toyota-menu.png"
             alt="Toyota Menu"
@@ -17,7 +17,7 @@ export default function OEM() {
             style={{ maxWidth: '3840px' }}
           />
         </Link>
-        <Link href="/oem/porsche" passHref>
+        <Link href="/oem/porsche" passHref prefetch={true}>
           <img
             src="/images/porsche-menu.png"
             alt="Porsche Menu"
@@ -25,7 +25,7 @@ export default function OEM() {
             style={{ maxWidth: '3840px' }}
           />
         </Link>
-        <Link href="/oem/generalMotors" passHref>
+        <Link href="/oem/generalMotors" passHref prefetch={true}>
           <img
             src="/images/gm-menu.png"
             alt="GM Menu"

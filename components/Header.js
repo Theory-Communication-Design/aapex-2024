@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <nav className="flex space-x-[50px]">
         {tabs.map((tab, index) => (
-          <Link key={index} href={tab.link} passHref>
+          <Link key={index} href={tab.link} passHref prefetch={true}>
             <div
               className={`w-[270px] h-[102px] flex justify-center items-center font-emprint text-black cursor-pointer p-4 text-[40px] text-center leading-[40px] ${
                 router.pathname === tab.link || (tab.name === 'PRODUCTS' && router.pathname.startsWith('/products'))

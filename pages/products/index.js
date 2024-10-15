@@ -23,6 +23,7 @@ export default function Products() {
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1 }}
       >
@@ -42,7 +43,7 @@ export default function Products() {
         {/* Menu Buttons */}
         <div className="flex flex-wrap justify-center gap-x-[250px] gap-y-[100px] w-full">
           {menuItems.map((item, index) => (
-            <Link key={index} href={item.link} passHref>
+            <Link key={index} href={item.link} passHref prefetch={true}>
               <div
                 className="bg-white flex justify-center items-center p-3 rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-[1505px] h-[197px]"
               >

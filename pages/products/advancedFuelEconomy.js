@@ -26,12 +26,9 @@ export default function AdvancedFuelEconomy() {
     viscosity: '0W-8  |  0W-16  |  0W-20  |  0W-30',
     viscosityMt: '120px',
     sectionMt: '160px',
-    button1: '/images/rocketLeague-button.png',
-    button2: '/images/toyota-button.png',
+    button1: '/images/toyota-button1.png',
     button1Height: '122px',
-    button2Height: '122px',
-    button1Href: '/rocketleague',
-    button2Href: '/oem/toyota',
+    button1Href: '/oem/toyota',
     buttonsMt: '210px',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
@@ -61,11 +58,8 @@ export default function AdvancedFuelEconomy() {
         viscosityMt={productData.viscosityMt}
         sectionMt={productData.sectionMt}
         button1={productData.button1}
-        button2={productData.button2}
         button1Height={productData.button1Height}
-        button2Height={productData.button2Height}
         button1Href={productData.button1Href}
-        button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
