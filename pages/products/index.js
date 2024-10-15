@@ -24,6 +24,7 @@ export default function Products() {
         muted
         playsInline
         preload="auto"
+        poster="/images/menu-first-frame.png"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1 }}
       >
