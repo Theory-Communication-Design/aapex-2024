@@ -29,7 +29,7 @@ export default function Toyota() {
     ],
     productsMt: '20px',
     subheaderTop: '160px',
-    videoSrc: '/videos/preview.mp4',
+    videoSrc: '/videos/toyota-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 

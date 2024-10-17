@@ -10,6 +10,11 @@ export default function Document() {
         <link rel="preload" href="/videos/preview.mp4" as="video" type="video/mp4" />
         <link rel="preload" href="/videos/testVideo.mp4" as="video" type="video/mp4" />
 
+        <link rel="preload" href="/videos/toyota-preview.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/videos/hagerty-preview.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/videos/truckSUV-preview.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/videos/classicCar-preview.mp4" as="video" type="video/mp4" />
+
         {/* Preload images */}
         <link rel="preload" href="/images/xoverland-header.png" as="image" />
         <link rel="preload" href="/images/xoverland-product1.png" as="image" />

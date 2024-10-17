@@ -29,7 +29,7 @@ export default function Hagerty() {
     ],
     productsMt: '60px',
     subheaderTop: '170px',
-    videoSrc: '/videos/preview.mp4',
+    videoSrc: '/videos/hagerty-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 

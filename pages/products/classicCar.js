@@ -28,7 +28,7 @@ export default function ClassicCar() {
     button1Height: '121px',
     button1Href: '/hagerty',
     buttonsMt: '260px',
-    videoSrc: '/videos/preview.mp4',
+    videoSrc: '/videos/classicCar-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 

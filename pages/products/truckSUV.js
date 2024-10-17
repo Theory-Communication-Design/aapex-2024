@@ -32,7 +32,7 @@ export default function TruckSUV() {
     button1Href: '/xoverland',
     button2Href: '/oem/toyota',
     buttonsMt: '260px',
-    videoSrc: '/videos/preview.mp4',
+    videoSrc: '/videos/truckSUV-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
 
