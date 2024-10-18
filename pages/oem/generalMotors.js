@@ -6,8 +6,7 @@ import UserActivityContext from '../../contexts/UserActivityContext';
 export default function GeneralMotors() {
   const partnerData = {
     headerImage: '/images/gm-header.png',
-    headerHeight: '170px',
-    headerMt: '-80px',
+    headerMt: '-1.5vw',
     paragraph: (
       <>
         General Motors has a rich history of automotive innovation, and the<br />
@@ -22,13 +21,13 @@ export default function GeneralMotors() {
         automotive brands.
       </>
     ),
-    paragraphMt: '100px',
-    paragraphTextSize: '40px',
+    paragraphMt: '2.5vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/gm-product1.png', link: '/products/supercar' }
     ],
-    productsMt: '-70px',
-    subheaderTop: '80px',
+    productsMt: '-0.8vw',
+    subheaderTop: '3vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,7 +50,6 @@ export default function GeneralMotors() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

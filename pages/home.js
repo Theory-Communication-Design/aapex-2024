@@ -23,36 +23,35 @@ export default function Home() {
         preload="auto"
         poster="/images/menu-first-frame.png"
         className="absolute top-0 left-0 w-full h-full object-cover"
-        style={{ zIndex: -1 }}
+        style={{ zIndex: -1, aspectRatio: "16/9" }}
       >
         <source src="/videos/menu.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
 
       {/* Top Bar */}
-      <div className="relative z-10 bg-white h-[361px] flex justify-center items-center w-full shadow-md">
+      <div className="relative z-10 bg-white h-[9.4vw] flex justify-center items-center w-full shadow-md">
         <img
           src="/images/logo.png"
           alt="Logo"
-          style={{ width: '653px', height: '133px' }}
+          className="w-auto"
+          style={{ height: '5vh' }}
         />
       </div>
 
       {/* Content Section */}
-      <div className="relative z-10 flex-grow flex flex-col justify-center">
-        <p className="text-white text-center text-[70px] pb-[120px] mt-[-100px] font-emprintSemiBold">
+      <div className="relative z-10 flex-grow flex flex-col justify-center items-center">
+        <p className="text-white text-center text-[1.5vw] pb-[6vh] mt-[-6vh] font-emprintSemiBold">
           Dive deeper into our wide-ranging partnerships by clicking below.
         </p>
 
-        {/* Adjusted container for buttons */}
-        <div className="flex flex-wrap justify-center gap-x-[250px] gap-y-[150px] w-full">
+        {/* Button Container */}
+        <div className="flex flex-wrap justify-center gap-x-[6vw] gap-y-[7vh] w-full">
           {buttonImages.map((button, index) => (
             <Link key={index} href={button.link} passHref>
-                <img
-                  src={button.image}
-                  style={{ width: '1505px', height: 'auto', objectFit: 'contain' }}
-                  className="mr-10"
-                />
+              <img
+                src={button.image}
+                style={{ width: '40vw', height: 'auto', objectFit: 'contain' }}
+              />
             </Link>
           ))}
         </div>

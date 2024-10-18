@@ -8,7 +8,7 @@ export default function ExtendedPerformanceHM() {
 
   const productData = {
     header: (<>Mobil 1™ Extended Performance<br />High Mileage</>),
-    headerTextSize: '80px',
+    headerTextSize: '2vw',
     image: '/images/extendedPerformanceHM.png',
     paragraph: (
       <>
@@ -20,14 +20,13 @@ export default function ExtendedPerformanceHM() {
         performance for high-mileage vehicles.
       </>
     ),
-    paragraphTextSize: '45px',
+    paragraphTextSize: '1vw',
     viscosity: '0W-20  |  5W-20  |  5W-30',
-    viscosityMt: '150px',
-    sectionMt: '100px',
+    viscosityMt: '4.5vw',
+    sectionMt: '4vw',
     button1: '/images/hagerty-button.png',
-    button1Height: '121px',
     button1Href: '/hagerty',
-    buttonsMt: '250px',
+    buttonsMt: '7vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -48,16 +47,15 @@ export default function ExtendedPerformanceHM() {
       <ProductPage
         header={productData.header}
         headerTextSize={productData.headerTextSize}
-        headerLineHeight='90px'
+        headerLineHeight='2.5vw'
         image={productData.image}
-        imageHeight="1261px"
+        imageHeight="31vw"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
         viscosityMt={productData.viscosityMt}
         sectionMt={productData.sectionMt}
         button1={productData.button1}
-        button1Height={productData.button1Height}
         button1Href={productData.button1Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}

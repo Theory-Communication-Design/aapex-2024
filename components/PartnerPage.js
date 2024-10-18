@@ -4,7 +4,6 @@ import UserActivityContext from '../contexts/UserActivityContext';
 
 const PartnerPage = ({
   headerImage,
-  headerHeight,
   headerMt,
   paragraph,
   paragraphMt,
@@ -46,7 +45,7 @@ const PartnerPage = ({
     <div className="relative min-h-screen">
       {/* Left Side */}
       <div
-        className="pl-[250px] pt-[200px] absolute top-[-2px] left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
+        className="pl-[5.5vw] pt-[4.5vw] absolute w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
         style={{
           backgroundImage: 'url(/images/leftside.png)',
           backgroundSize: 'contain',
@@ -58,8 +57,7 @@ const PartnerPage = ({
           <img
             src={headerImage}
             alt="Header"
-            className="w-auto"
-            style={{ height: headerHeight }}
+            className="h-auto w-[12vw]"
           />
         </div>
 
@@ -69,19 +67,19 @@ const PartnerPage = ({
         </p>
 
         {/* Subheader */}
-        <h2 className="relative text-[70px] font-emprintSemiBold" style={{ top: subheaderTop }}>
+        <h2 className="relative text-[2vw] font-emprintSemiBold" style={{ top: subheaderTop }}>
           Feature Products:
         </h2>
 
         {/* Product Images */}
-        <div className="flex space-x-[75px]" style={{ marginTop: productsMt }}>
+        <div className="flex space-x-[2vw]" style={{ marginTop: productsMt }}>
           {products.map((product, index) => (
             <Link key={index} href={product.link} passHref>
               <div className="cursor-pointer">
                 <img
                   src={product.image}
                   alt={product.text}
-                  style={{ width: 'auto', height: '821px' }}
+                  style={{ width: 'auto', height: '22vw' }}
                 />
               </div>
             </Link>
@@ -105,11 +103,11 @@ const PartnerPage = ({
         </video>
 
         {/* Play Button */}
-        <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
+        <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-15vw]">
           <img
             src="/images/play-icon.png"
             alt="Play Icon"
-            className="w-[356px] h-auto cursor-pointer z-10"
+            className="w-[9vw] h-auto cursor-pointer z-10"
             onClick={handlePlayClick}
             style={{ pointerEvents: 'auto' }}
           />

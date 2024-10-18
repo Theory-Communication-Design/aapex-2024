@@ -6,8 +6,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 export default function RocketLeague() {
   const partnerData = {
     headerImage: '/images/rocketLeague-header.png',
-    headerHeight: '165px',
-    headerMt: '-80px',
+    headerMt: '-1.5vw',
     paragraph: (
       <>
         Rocket League is an arcade-style, automotive soccer game that allows<br />
@@ -21,13 +20,13 @@ export default function RocketLeague() {
         young, dynamic, and engaged audience.
       </>
     ),
-    paragraphMt: '90px',
-    paragraphTextSize: '40px',
+    paragraphMt: '2.5vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/rocketLeague-product1.png', link: '/products/fullSynthetic/' }
     ],
-    productsMt: '0px',
-    subheaderTop: '130px',
+    productsMt: '-0.4vw',
+    subheaderTop: '3vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -50,7 +49,6 @@ export default function RocketLeague() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

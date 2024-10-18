@@ -8,7 +8,7 @@ export default function ClassicCar() {
 
   const productData = {
     header: 'Mobil 1™ Classic Car',
-    headerTextSize: '90px',
+    headerTextSize: '2vw',
     image: '/images/classicCar.png',
     paragraph: (
       <>
@@ -20,14 +20,13 @@ export default function ClassicCar() {
         performance and longevity.
       </>
     ),
-    paragraphTextSize: '40px',
+    paragraphTextSize: '1vw',
     viscosity: '10W-30',
-    viscosityMt: '170px',
-    sectionMt: '150px',
+    viscosityMt: '5vw',
+    sectionMt: '4vw',
     button1: '/images/hagerty-button.png',
-    button1Height: '121px',
     button1Href: '/hagerty',
-    buttonsMt: '260px',
+    buttonsMt: '7vw',
     videoSrc: '/videos/classicCar-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -49,18 +48,14 @@ export default function ClassicCar() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
-        imageHeight="1347px"
+        imageHeight="36vw"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
         viscosityMt={productData.viscosityMt}
         sectionMt={productData.sectionMt}
         button1={productData.button1}
-        button2={productData.button2}
-        button1Height={productData.button1Height}
-        button2Height={productData.button2Height}
         button1Href={productData.button1Href}
-        button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}

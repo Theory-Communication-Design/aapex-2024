@@ -8,7 +8,7 @@ export default function Racing() {
 
   const productData = {
     header: 'Mobil 1 Racing™',
-    headerTextSize: '100px',
+    headerTextSize: '2vw',
     image: '/images/racing.png',
     paragraph: (
       <>
@@ -19,14 +19,13 @@ export default function Racing() {
         exceptional protection, performance and reliability.
       </>
     ),
-    paragraphTextSize: '40px',
+    paragraphTextSize: '1vw',
     viscosity: '0W-30  |  0W-50',
-    viscosityMt: '200px',
-    sectionMt: '140px',
+    viscosityMt: '5.5vw',
+    sectionMt: '4vw',
     button1: '/images/redbull-button.png',
-    button1Height: '121px',
     button1Href: '/redbullracing',
-    buttonsMt: '300px',
+    buttonsMt: '9vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -48,15 +47,13 @@ export default function Racing() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
-        imageHeight="1246px"
+        imageHeight="33vw"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
         viscosityMt={productData.viscosityMt}
         sectionMt={productData.sectionMt}
         button1={productData.button1}
-        button1Height={productData.button1Height}
-        button2Height={productData.button2Height}
         button1Href={productData.button1Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}

@@ -8,7 +8,7 @@ export default function TruckSUV() {
 
   const productData = {
     header: 'Mobil 1™ Truck & SUV',
-    headerTextSize: '90px',
+    headerTextSize: '2vw',
     image: '/images/truckSUV.png',
     paragraph: (
       <>
@@ -18,20 +18,18 @@ export default function TruckSUV() {
         Three viscosities of the advanced full synthetic<br />
         formula are available and are all designed to go<br />
         10,000 miles between oil changes.*<br />
-        <span className='text-[23.5px]'>*Protects for up to 10,000 miles or 1 year, whichever comes first</span>
+        <span className='text-[0.6vw]'>*Protects for up to 10,000 miles or 1 year, whichever comes first</span>
       </>
     ),
-    paragraphTextSize: '40px',
+    paragraphTextSize: '1vw',
     viscosity: '0W-20  |  5W-20  |  5W-30',
-    viscosityMt: '130px',
-    sectionMt: '150px',
+    viscosityMt: '4vw',
+    sectionMt: '4vw',
     button1: '/images/xoverland-button.png',
     button2: '/images/toyota-button.png',
-    button1Height: '122px',
-    button2Height: '122px',
     button1Href: '/xoverland',
     button2Href: '/oem/toyota',
-    buttonsMt: '260px',
+    buttonsMt: '7vw',
     videoSrc: '/videos/truckSUV-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -53,7 +51,7 @@ export default function TruckSUV() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
-        imageHeight="1346px"
+        imageHeight="36vw"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
@@ -61,8 +59,6 @@ export default function TruckSUV() {
         sectionMt={productData.sectionMt}
         button1={productData.button1}
         button2={productData.button2}
-        button1Height={productData.button1Height}
-        button2Height={productData.button2Height}
         button1Href={productData.button1Href}
         button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}

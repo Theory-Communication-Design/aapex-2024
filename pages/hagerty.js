@@ -6,8 +6,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 export default function Hagerty() {
   const partnerData = {
     headerImage: '/images/hagerty-header.png',
-    headerHeight: '87px',
-    headerMt: '-80px',
+    headerMt: '-1vw',
     paragraph: (
       <>
         The relationship between Hagerty and the Mobil 1™ brand is dedicated<br />
@@ -21,14 +20,14 @@ export default function Hagerty() {
         through experiences and content.
       </>
     ),
-    paragraphMt: '100px',
-    paragraphTextSize: '40px',
+    paragraphMt: '3vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/hagerty-product1.png', link: '/products/extendedPerformanceHM' },
       { image: '/images/hagerty-product2.png', link: '/products/classicCar' }
     ],
-    productsMt: '60px',
-    subheaderTop: '170px',
+    productsMt: '0.5vw',
+    subheaderTop: '4vw',
     videoSrc: '/videos/hagerty-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,7 +50,6 @@ export default function Hagerty() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

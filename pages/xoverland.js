@@ -6,8 +6,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 export default function XOverland() {
   const partnerData = {
     headerImage: '/images/xoverland-header.png',
-    headerHeight: '234px',
-    headerMt: '-80px',
+    headerMt: '-1.5vw',
     paragraph: (
       <>
         XOverland is a decade-plus partner of Toyota producing cinematic<br />
@@ -22,14 +21,14 @@ export default function XOverland() {
         their vehicles to the test.
       </>
     ),
-    paragraphMt: '0px',
-    paragraphTextSize: '40px',
+    paragraphMt: '2.5vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/xoverland-product1.png', link: '/products/truckSUV/' },
       { image: '/images/xoverland-product2.png', link: '/products/extendedPerformance/' }
     ],
-    productsMt: '-40px',
-    subheaderTop: '100px',
+    productsMt: '-1vw',
+    subheaderTop: '3vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -52,7 +51,6 @@ export default function XOverland() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

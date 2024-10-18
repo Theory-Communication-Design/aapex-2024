@@ -6,8 +6,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 export default function RedBullRacing() {
   const partnerData = {
     headerImage: '/images/redbull-header.png',
-    headerHeight: '160px',
-    headerMt: '-80px',
+    headerMt: '-1.7vw',
     paragraph: (
       <>
         Our sponsorship with this high-performance team is a testament to our<br />
@@ -22,13 +21,13 @@ export default function RedBullRacing() {
         of the ORBR factory in London, UK.
       </>
     ),
-    paragraphMt: '90px',
-    paragraphTextSize: '40px',
+    paragraphMt: '2.3vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/redbull-product1.png', link: '/products/racing/' }
     ],
-    productsMt: '-60px',
-    subheaderTop: '80px',
+    productsMt: '0vw',
+    subheaderTop: '3.5vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,7 +50,6 @@ export default function RedBullRacing() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

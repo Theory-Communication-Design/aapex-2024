@@ -8,7 +8,7 @@ export default function AdvancedFuelEconomy() {
 
   const productData = {
     header: 'Mobil 1™ Advanced Fuel Economy',
-    headerTextSize: '80px',
+    headerTextSize: '2vw',
     image: '/images/advancedFuelEconomy.png',
     paragraph: (
       <>
@@ -22,14 +22,13 @@ export default function AdvancedFuelEconomy() {
         running like new.
       </>
     ),
-    paragraphTextSize: '40px',
+    paragraphTextSize: '1vw',
     viscosity: '0W-8  |  0W-16  |  0W-20  |  0W-30',
-    viscosityMt: '120px',
-    sectionMt: '160px',
+    viscosityMt: '3.5vw',
+    sectionMt: '4vw',
     button1: '/images/toyota-button1.png',
-    button1Height: '122px',
     button1Href: '/oem/toyota',
-    buttonsMt: '210px',
+    buttonsMt: '6.5vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,14 +50,13 @@ export default function AdvancedFuelEconomy() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
-        imageHeight="1265px"
+        imageHeight="33.5vw"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
         viscosityMt={productData.viscosityMt}
         sectionMt={productData.sectionMt}
         button1={productData.button1}
-        button1Height={productData.button1Height}
         button1Href={productData.button1Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}

@@ -6,8 +6,7 @@ import UserActivityContext from '../../contexts/UserActivityContext';
 export default function Toyota() {
   const partnerData = {
     headerImage: '/images/toyota-header.png',
-    headerHeight: '139px',
-    headerMt: '-80px',
+    headerMt: '-1.3vw',
     paragraph: (
       <>
         The relationship between Toyota and the Mobil 1™ brand focuses on<br />
@@ -21,14 +20,14 @@ export default function Toyota() {
         champion of the collaboration, are living proof of what this collaboration has to offer.
       </>
     ),
-    paragraphMt: '100px',
-    paragraphTextSize: '40px',
+    paragraphMt: '2.7vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/toyota-product1.png', link: '/products/truckSUV' },
       { image: '/images/toyota-product2.png', link: '/products/advancedFuelEconomy' }
     ],
-    productsMt: '20px',
-    subheaderTop: '160px',
+    productsMt: '0.4vw',
+    subheaderTop: '4vw',
     videoSrc: '/videos/toyota-preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,7 +50,6 @@ export default function Toyota() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

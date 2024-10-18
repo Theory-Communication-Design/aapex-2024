@@ -37,18 +37,18 @@ export default function Products() {
 
       {/* Content Section */}
       <div className="relative z-10 flex-grow flex flex-col justify-center items-center">
-        <p className="text-white text-center text-[70px] pb-[100px] mt-[-50px] font-emprintSemiBold">
+        <p className="text-white text-center text-[1.5vw] pb-[5vh] mt-[-4vh] font-emprintSemiBold">
           Learn more about specific Mobil 1™ products by clicking below.
         </p>
 
         {/* Menu Buttons */}
-        <div className="flex flex-wrap justify-center gap-x-[250px] gap-y-[100px] w-full">
+        <div className="flex flex-wrap justify-center gap-x-[6vw] gap-y-[3vw] w-full">
           {menuItems.map((item, index) => (
             <Link key={index} href={item.link} passHref prefetch={true}>
               <div
-                className="bg-white flex justify-center items-center p-3 rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-[1505px] h-[197px]"
+                className="bg-white flex justify-center items-center p-3 rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-[40vw] h-[4.5vw]"
               >
-                <span className="text-black text-[75px] font-emprint text-center">{item.text}</span>
+                <span className="text-black text-[2vw] font-emprint text-center">{item.text}</span>
               </div>
             </Link>
           ))}

@@ -6,8 +6,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 export default function Steer() {
   const partnerData = {
     headerImage: '/images/steer-header.png',
-    headerHeight: '165px',
-    headerMt: '-80px',
+    headerMt: '-2vw',
     paragraph: (
       <>
         Steer is an industry-leading shop marketing and communications<br />
@@ -16,19 +15,19 @@ export default function Steer() {
         long-term collaboration with Steer, the Mobil marketing team is working with<br />
         Steer to deliver new fluid service communications aimed at increasing consumer<br />
         engagement, knowledge, and usage of Mobil 1™ products.<br />
-        <span style={{ display: 'block', marginBottom: '20px' }}></span>
+        <span style={{ display: 'block', marginBottom: '1vw' }}></span>
         Also, Steer and the industry-leading shop scheduling platform called Auto Ops have just<br />
         merged, allowing consumers to easily book Mobil 1™ oil changes. Learn more about these<br />
         platforms at the Steer table inside our booth.
       </>
     ),
-    paragraphMt: '90px',
-    paragraphTextSize: '40px',
+    paragraphMt: '2vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/steer-product1.png', link: '/products/extendedPerformance/' }
     ],
-    productsMt: '-10px',
-    subheaderTop: '120px',
+    productsMt: '0.2vw',
+    subheaderTop: '4vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,7 +50,6 @@ export default function Steer() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

@@ -8,7 +8,7 @@ export default function FullSynthetic() {
 
   const productData = {
     header: 'Mobil 1™ Advanced Full Synthetic',
-    headerTextSize: '85px',
+    headerTextSize: '2vw',
     image: '/images/fullSynthetic.png',
     paragraph: (
       <>
@@ -21,17 +21,15 @@ export default function FullSynthetic() {
         and performance.
       </>
     ),
-    paragraphTextSize: '45px',
+    paragraphTextSize: '1vw',
     viscosity: '5W-20  |  5W-30  |  10W-30  |  15W-50',
-    viscosityMt: '110px',
-    sectionMt: '150px',
+    viscosityMt: '4vw',
+    sectionMt: '4vw',
     button1: '/images/rocketLeague-button.png',
     button2: '/images/hotwheels-button.png',
-    button1Height: '121px',
-    button2Height: '121px',
     button1Href: '/rocketleague',
     button2Href: '/hotwheels',
-    buttonsMt: '220px',
+    buttonsMt: '7vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -53,7 +51,7 @@ export default function FullSynthetic() {
         header={productData.header}
         headerTextSize={productData.headerTextSize}
         image={productData.image}
-        imageHeight="1347px"
+        imageHeight="36vw"
         paragraph={productData.paragraph}
         paragraphTextSize={productData.paragraphTextSize}
         viscosity={productData.viscosity}
@@ -61,8 +59,6 @@ export default function FullSynthetic() {
         sectionMt={productData.sectionMt}
         button1={productData.button1}
         button2={productData.button2}
-        button1Height={productData.button1Height}
-        button2Height={productData.button2Height}
         button1Href={productData.button1Href}
         button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}

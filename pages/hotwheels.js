@@ -6,8 +6,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 export default function HotWheels() {
   const partnerData = {
     headerImage: '/images/hotwheels-header.png',
-    headerHeight: '131px',
-    headerMt: '-80px',
+    headerMt: '-2vw',
     paragraph: (
       <>
         Since 1968, Hot Wheels has been a global phenomenon capturing the<br />
@@ -22,13 +21,13 @@ export default function HotWheels() {
         of fun and imaginative opportunities for all demographics.
       </>
     ),
-    paragraphMt: '90px',
-    paragraphTextSize: '40px',
+    paragraphMt: '2vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/hotwheels-product1.png', link: '/products/fullSynthetic' }
     ],
-    productsMt: '-30px',
-    subheaderTop: '100px',
+    productsMt: '0vw',
+    subheaderTop: '3.5vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,7 +50,6 @@ export default function HotWheels() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}

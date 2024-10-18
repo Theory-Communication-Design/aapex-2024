@@ -15,9 +15,6 @@ const ProductPage = ({
   button1,
   button2,
   button3,
-  button1Height,
-  button2Height,
-  button3Height,
   button1Href,
   button2Href,
   button3Href,
@@ -63,7 +60,7 @@ const ProductPage = ({
     <div className="relative min-h-screen">
       {/* Left Side */}
       <div
-        className="pl-[225px] pt-[180px] absolute top-0 left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
+        className="pl-[5.5vw] pt-[4.5vw] absolute top-0 left-0 w-[80%] h-full bg-no-repeat bg-cover bg-top text-white p-10 z-10"
         style={{
           backgroundImage: 'url(/images/leftside-product.png)',
           backgroundSize: 'contain',
@@ -76,26 +73,25 @@ const ProductPage = ({
         <div className="flex items-start" style={{ marginTop: sectionMt }}>
           <img
             src={image}
-            className="mr-10"
             style={{ height: imageHeight, width: 'auto' }}
           />
-          <div className="flex flex-col ml-28">
+          <div className="flex flex-col ml-20">
             <p className="font-emprint" style={{ fontSize: paragraphTextSize, marginTop: '-15px' }}>
               {paragraph}
             </p>
             <div className="mt-24" style={{ marginTop: viscosityMt }}>
-              <h2 className="text-[55px] font-emprintSemiBold">Available Viscosities:</h2>
-              <p className="text-[60px] font-emprintSemiBold mt-5">{viscosity}</p>
+              <h2 className="text-[1.5vw] font-emprintSemiBold">Available Viscosities:</h2>
+              <p className="text-[1.4vw] font-emprintSemiBold mt-1">{viscosity}</p>
             </div>
             <div className="flex items-center" style={{ marginTop: buttonsMt }}>
-              <h2 className="text-[60px] font-emprintSemiBold">Featured in:</h2>
+              <h2 className="text-[1.5vw] font-emprintSemiBold">Featured in:</h2>
 
               {button1 && button1Href && (
                 <Link href={button1Href} passHref>
                   <div className="ml-10 cursor-pointer">
                     <img
                       src={button1}
-                      style={{ height: button1Height, width: 'auto' }}
+                      style={{ height: '3vw', width: 'auto' }}
                     />
                   </div>
                 </Link>
@@ -106,7 +102,7 @@ const ProductPage = ({
                   <div className="ml-5 cursor-pointer">
                     <img
                       src={button2}
-                      style={{ height: button2Height, width: 'auto' }}
+                      style={{ height: '3vw', width: 'auto' }}
                     />
                   </div>
                 </Link>
@@ -117,7 +113,7 @@ const ProductPage = ({
                   <div className="ml-5 cursor-pointer">
                     <img
                       src={button3}
-                      style={{ height: button3Height, width: 'auto' }}
+                      style={{ height: '3vw', width: 'auto' }}
                     />
                   </div>
                 </Link>
@@ -140,11 +136,11 @@ const ProductPage = ({
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-500px]">
+        <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-15vw]">
           <img
             src="/images/play-icon.png"
             alt="Play Icon"
-            className="w-[356px] h-auto cursor-pointer z-10"
+            className="w-[9vw] h-auto cursor-pointer z-10"
             onClick={handlePlayClick}
             style={{ pointerEvents: 'auto' }}
           />

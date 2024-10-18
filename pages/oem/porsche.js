@@ -6,8 +6,7 @@ import UserActivityContext from '../../contexts/UserActivityContext';
 export default function Porsche() {
   const partnerData = {
     headerImage: '/images/porsche-header.png',
-    headerHeight: '45px',
-    headerMt: '-30px',
+    headerMt: '-0vw',
     paragraph: (
       <>
         Porsche is synonymous with luxury, performance, and engineering<br />
@@ -21,14 +20,14 @@ export default function Porsche() {
         inspires driving in the moment.
       </>
     ),
-    paragraphMt: '120px',
-    paragraphTextSize: '40px',
+    paragraphMt: '3.5vw',
+    paragraphTextSize: '1vw',
     products: [
       { image: '/images/porsche-product1.png', link: '/products/europeanCarFormula' },
       { image: '/images/porsche-product2.png', link: '/products/esp' }
     ],
-    productsMt: '30px',
-    subheaderTop: '170px',
+    productsMt: '0.6vw',
+    subheaderTop: '4vw',
     videoSrc: '/videos/preview.mp4',
     fullScreenVideoSrc: '/videos/testVideo.mp4'
   };
@@ -51,7 +50,6 @@ export default function Porsche() {
       <Header />
       <PartnerPage
         headerImage={partnerData.headerImage}
-        headerHeight={partnerData.headerHeight}
         headerMt={partnerData.headerMt}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}
