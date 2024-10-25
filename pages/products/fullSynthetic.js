@@ -15,7 +15,7 @@ export default function FullSynthetic() {
         Engineered to help extend engine<br />
         life, even in severe driving conditions.<br />
         This advanced formula offers superior<br />
-        wear protection, cleaning power, and<br />
+        wear protection, cleaning power and<br />
         overall engine health for drivers who<br />
         demand the best in engine protection<br/>
         and performance.

@@ -5,6 +5,7 @@ import UserActivityContext from '../contexts/UserActivityContext';
 const PartnerPage = ({
   headerImage,
   headerMt,
+  headerWidth = '12vw',
   paragraph,
   paragraphMt,
   paragraphTextSize,
@@ -57,7 +58,7 @@ const PartnerPage = ({
           <img
             src={headerImage}
             alt="Header"
-            className="h-auto w-[12vw]"
+            style={{ width: headerWidth }}
           />
         </div>
 
@@ -132,7 +133,7 @@ const PartnerPage = ({
             <source src={fullScreenVideoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <button onClick={handleCloseModal} className="absolute top-7 right-16 text-white text-[100px]">
+          <button onClick={handleCloseModal} className="absolute top-5 right-10 text-white text-[3vw]">
             ✕
           </button>
         </div>

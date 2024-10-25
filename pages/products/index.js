@@ -2,11 +2,11 @@ import Link from 'next/link';
 import Header from 'components/Header';
 
 const menuItems = [
-  { text: 'Mobil 1™ Advanced Full Synthetic', link: '/products/fullSynthetic' },
-  { text: 'Mobil 1™ Classic Car', link: '/products/classicCar' },
+  { text: 'Advanced Full Synthetic', link: '/products/fullSynthetic' },
+  { text: 'Mobil 1 Racing™', link: '/products/racing' },
   { text: 'Truck & SUV', link: '/products/truckSUV' },
   { text: 'Advanced Fuel Economy', link: '/products/advancedFuelEconomy' },
-  { text: 'Mobil 1™ Racing', link: '/products/racing' },
+  { text: 'Classic Car', link: '/products/classicCar' },
   { text: 'Supercar', link: '/products/supercar' },
   { text: 'Extended Performance High Mileage', link: '/products/extendedPerformanceHM' },
   { text: 'Extended Performance', link: '/products/extendedPerformance' },

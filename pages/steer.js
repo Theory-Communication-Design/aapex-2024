@@ -7,14 +7,15 @@ export default function Steer() {
   const partnerData = {
     headerImage: '/images/steer-header.png',
     headerMt: '-2vw',
+    headerWidth: '22vw',
     paragraph: (
       <>
         Steer is an industry-leading shop marketing and communications<br />
-        platform designed to bring customers to shops, and grow shop sales<br />
+        platform designed to bring customers to shops and grow shop sales<br />
         through increased car count and ticket averages. As part of the<br />
         long-term collaboration with Steer, the Mobil marketing team is working with<br />
         Steer to deliver new fluid service communications aimed at increasing consumer<br />
-        engagement, knowledge, and usage of Mobil 1™ products.<br />
+        engagement, knowledge and usage of Mobil 1™ products.<br />
         <span style={{ display: 'block', marginBottom: '1vw' }}></span>
         Also, Steer and the industry-leading shop scheduling platform called Auto Ops have just<br />
         merged, allowing consumers to easily book Mobil 1™ oil changes. Learn more about these<br />
@@ -51,6 +52,7 @@ export default function Steer() {
       <PartnerPage
         headerImage={partnerData.headerImage}
         headerMt={partnerData.headerMt}
+        headerWidth={partnerData.headerWidth}
         paragraph={partnerData.paragraph}
         paragraphMt={partnerData.paragraphMt}
         paragraphTextSize={partnerData.paragraphTextSize}

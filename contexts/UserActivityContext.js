@@ -14,11 +14,10 @@ export const UserActivityProvider = ({ children }) => {
     };
 
     const handleInactivity = () => {
-      const currentPath = router.pathname;
-      const timeoutDuration = (currentPath === '/home' || currentPath === '/products') ? 120000 : 60000;
+      const timeoutDuration = 300000;
 
       // Redirect if inactivity exceeds the timeoutDuration and user is not on the landing page
-      if (Date.now() - lastActivityTime >= timeoutDuration && currentPath !== '/') {
+      if (Date.now() - lastActivityTime >= timeoutDuration && router.pathname !== '/') {
         router.push('/');
       }
     };

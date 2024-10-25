@@ -10,7 +10,7 @@ export default function Hagerty() {
     paragraph: (
       <>
         The relationship between Hagerty and the Mobil 1™ brand is dedicated<br />
-        to preserving automotive history and culture, protecting iconic vehicles for<br />
+        to preserving automotive history and culture and protecting iconic vehicles for<br />
         future generations by providing the essential care classic cars deserve. Together<br />
         we developed and premiered the documentary “Racing with Giants: Porsche at<br />
         Le Mans”, narrated by Le Mans podium finisher Patrick Dempsey, which currently<br />

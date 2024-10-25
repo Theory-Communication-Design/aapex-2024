@@ -16,7 +16,7 @@ export default function RedBullRacing() {
         stops around the country, inviting consumers to try their hand at being part of a pit crew.<br />
         Show runs allow spectators to witness the power of the brands up close and personal.<br />
         Through this sponsorship, Retailers have the opportunity to engage consumers through unique<br />
-        and exciting promotions. Promotions can be customized to fit each retailer go to market strategy<br/>
+        and exciting promotions. Promotions can be customized to fit each Retailer's go-to-market strategy<br/>
         and can include everything from Oracle Red Bull Racing branded merchandise to exclusive tours<br/>
         of the ORBR factory in London, UK.
       </>

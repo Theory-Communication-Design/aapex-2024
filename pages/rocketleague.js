@@ -12,12 +12,12 @@ export default function RocketLeague() {
         Rocket League is an arcade-style, automotive soccer game that allows<br />
         millions of players to drive for the win. The Mobil 1™ brand has joined forces<br />
         with Rocket League to bring together the worlds of gaming and performance.<br />
-        This is achieved through in-game items and decals, and real-life giveaways.<br />
-        Additionally, the well-known North American Rocket League team, GenG Mobil 1<br />
-        Racing, was formed as a result of a sponsorship between American eSports<br />
+        This is achieved through in-game items and decals and real-life giveaways.<br />
+        Additionally, the well-known North American Rocket League team GenG Mobil 1<br />
+        Racing was formed as a result of a sponsorship between American eSports<br />
         organization Gen.G eSports and the Mobil 1 brand. The seamless integration of the<br />
         Mobil 1 brand into a video game with an extensive reach allows sponsors to tap into a<br />
-        young, dynamic, and engaged audience.
+        young, dynamic and engaged audience.
       </>
     ),
     paragraphMt: '2.5vw',

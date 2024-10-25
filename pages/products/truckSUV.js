@@ -13,7 +13,7 @@ export default function TruckSUV() {
     paragraph: (
       <>
         For some of the world’s hardest-working<br />
-        engines, Mobil 1 Truck and SUV delivers<br />
+        engines, Mobil 1™ Truck and SUV delivers<br />
         protection for towing, hauling and more.<br />
         Three viscosities of the advanced full synthetic<br />
         formula are available and are all designed to go<br />

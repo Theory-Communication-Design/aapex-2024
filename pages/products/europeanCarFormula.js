@@ -16,7 +16,7 @@ export default function EuropeanCarFormula() {
         the best in engine protection and performance.<br />
         Mobil 1™ FS European Car Formula was designed<br />
         to shield your engine from wear, deposits and<br />
-        orrosion, ensuring long-lasting reliability.
+        corrosion, ensuring long-lasting reliability.
       </>
     ),
     paragraphTextSize: '1vw',
