@@ -13,7 +13,7 @@ export default function XOverland() {
         adventure-themed overlanding content with authentic individuals. In the<br />
         network’s Creator Series driven by Mobil 1™, ordinary people doing extraordinary<br />
         things have earned over a million hours viewed to date. Content includes series like<br />
-        <i>Desk to Glory</i>, <i>We Will Roam and Bound</i>, and <i>Bound for Nowhere</i>, in which overlanders document<br />
+        <i>Desk to Glory</i>, <i>We Will Roam</i>, and <i>Bound for Nowhere</i>, in which overlanders document<br />
         their global adventures with a unique twist. Other programs include <i>Roam Overland</i> in which<br />
         an African overlander rediscovers his homeland and <i>Gon Cookin’</i>, highlighting a guest’s favorite<br />
         dish adapted for camping. The Mobil 1™ brand shares the same spirit of adventure. As a Retailer,<br />
