@@ -13,19 +13,16 @@ const PartnerPage = ({
   productsMt,
   subheaderTop,
   videoSrc,
+  posterSrc, // Passed poster prop
   fullScreenVideoSrc
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const fullScreenVideoRef = useRef(null);
   const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
-  // Dynamically set the poster image based on video source
-  const posterSrc = `/video-posters/${videoSrc.split('/').pop().replace('.mp4', '')}-poster.jpg`;
-
   const handlePlayClick = () => {
     setIsModalOpen(true);
     setFullScreenVideoSrc(fullScreenVideoSrc);
-
     setTimeout(() => {
       if (fullScreenVideoRef.current) {
         fullScreenVideoRef.current.play();
@@ -55,35 +52,23 @@ const PartnerPage = ({
           backgroundPosition: 'top',
         }}
       >
-        {/* Header as an Image */}
         <div className="flex items-center" style={{ marginTop: headerMt }}>
-          <img
-            src={headerImage}
-            alt="Header"
-            style={{ width: headerWidth }}
-          />
+          <img src={headerImage} alt="Header" style={{ width: headerWidth }} />
         </div>
 
-        {/* Paragraph */}
         <p className="font-emprint" style={{ marginTop: paragraphMt, fontSize: paragraphTextSize }}>
           {paragraph}
         </p>
 
-        {/* Subheader */}
         <h2 className="relative text-[2vw] font-emprintSemiBold" style={{ top: subheaderTop }}>
           Feature Products:
         </h2>
 
-        {/* Product Images */}
         <div className="flex space-x-[2vw]" style={{ marginTop: productsMt }}>
           {products.map((product, index) => (
             <Link key={index} href={product.link} passHref>
               <div className="cursor-pointer">
-                <img
-                  src={product.image}
-                  alt={product.text}
-                  style={{ width: 'auto', height: '22vw' }}
-                />
+                <img src={product.image} alt={product.text} style={{ width: 'auto', height: '22vw' }} />
               </div>
             </Link>
           ))}
@@ -92,20 +77,18 @@ const PartnerPage = ({
 
       {/* Right Side - Video */}
       <div className="absolute right-0 h-full">
-        {/* Background looping video with poster */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          poster={posterSrc} // Use dynamic poster for initial load
+          poster={posterSrc} // Use passed posterSrc prop
           className="w-full h-full object-cover"
         >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Play Button */}
         <div className="absolute inset-0 flex justify-center items-center ml-[50%] mt-[-15vw]">
           <img
             src="/images/play-icon.png"
@@ -117,7 +100,7 @@ const PartnerPage = ({
         </div>
       </div>
 
-      {/* Modal for Fullscreen Video */}
+      {/* Modal for Full-Screen Video */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
           <video
