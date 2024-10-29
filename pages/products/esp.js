@@ -27,16 +27,15 @@ export default function ESP() {
     button1: '/images/porsche-button1.png',
     button1Href: '/oem/porsche',
     buttonsMt: '8vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/esp-preview.mp4',
+    posterSrc: '/video-posters/esp-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/esp-video.mp4'
   };
 
-  // Set the fullScreenVideoSrc when this page is loaded
   useEffect(() => {
     setFullScreenVideoSrc(productData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
@@ -58,6 +57,7 @@ export default function ESP() {
         button1Href={productData.button1Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
+        posterSrc={productData.posterSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>

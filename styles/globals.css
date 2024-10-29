@@ -54,3 +54,12 @@ html, body {
   overflow: hidden;
   height: 100%;
 }
+
+.menu-button-image {
+  opacity: 0;
+  transition: opacity 0s ease-in;
+}
+
+.menu-button-image[data-loaded="true"] {
+  opacity: 1;
+}

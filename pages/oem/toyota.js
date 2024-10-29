@@ -29,18 +29,16 @@ export default function Toyota() {
     productsMt: '0.4vw',
     subheaderTop: '4vw',
     videoSrc: '/videos/toyota-preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    posterSrc: '/video-posters/toyota-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/toyota-video.mp4'
   };
 
-  // Get the context to update fullScreenVideoSrc state
   const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   useEffect(() => {
-    // Update the fullScreenVideoSrc when this page is loaded
     setFullScreenVideoSrc(partnerData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, partnerData.fullScreenVideoSrc]);
@@ -58,6 +56,7 @@ export default function Toyota() {
         productsMt={partnerData.productsMt}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
+        posterSrc={partnerData.posterSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>

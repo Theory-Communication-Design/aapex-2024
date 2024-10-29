@@ -31,16 +31,15 @@ export default function ExtendedPerformance() {
     button1Href: '/xoverland',
     button2Href: '/steer',
     buttonsMt: '6.5vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/EP-preview.mp4',
+    posterSrc: '/video-posters/EP-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/EP-video.mp4'
   };
 
-  // Set the fullScreenVideoSrc when this page is loaded
   useEffect(() => {
     setFullScreenVideoSrc(productData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
@@ -64,6 +63,7 @@ export default function ExtendedPerformance() {
         button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
+        posterSrc={productData.posterSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>

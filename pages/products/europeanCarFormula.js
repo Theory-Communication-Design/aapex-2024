@@ -26,9 +26,18 @@ export default function EuropeanCarFormula() {
     button1: '/images/porsche-button1.png',
     button1Href: '/oem/porsche',
     buttonsMt: '8.5vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/european-preview.mp4',
+    posterSrc: '/video-posters/european-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/european-video.mp4'
   };
+
+  useEffect(() => {
+    setFullScreenVideoSrc(productData.fullScreenVideoSrc);
+
+    return () => {
+      setFullScreenVideoSrc(null);
+    };
+  }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -47,6 +56,7 @@ export default function EuropeanCarFormula() {
         button1Href={productData.button1Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
+        posterSrc={productData.posterSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>

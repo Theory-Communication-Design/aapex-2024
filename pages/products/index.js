@@ -23,8 +23,7 @@ export default function Products() {
         loop
         muted
         playsInline
-        preload="auto"
-        poster="/images/menu-first-frame.png"
+        poster="/video-posters/menu-preview-poster.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1 }}
       >

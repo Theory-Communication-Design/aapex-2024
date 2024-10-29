@@ -27,16 +27,15 @@ export default function ExtendedPerformanceHM() {
     button1: '/images/hagerty-button.png',
     button1Href: '/hagerty',
     buttonsMt: '7vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/EPHM-preview.mp4',
+    posterSrc: '/video-posters/EPHM-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/EPHM-video.mp4'
   };
 
-  // Set the fullScreenVideoSrc when this page is loaded
   useEffect(() => {
     setFullScreenVideoSrc(productData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
@@ -59,8 +58,10 @@ export default function ExtendedPerformanceHM() {
         button1Href={productData.button1Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
+        posterSrc={productData.posterSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>
   );
 }
+

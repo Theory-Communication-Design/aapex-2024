@@ -28,19 +28,17 @@ export default function RedBullRacing() {
     ],
     productsMt: '0vw',
     subheaderTop: '3.5vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/redBull-preview.mp4',
+    posterSrc: '/video-posters/redBull-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/redBull-video.mp4'
   };
 
-  // Get the context to update fullScreenVideoSrc state
   const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   useEffect(() => {
-    // Update the fullScreenVideoSrc when this page is loaded
     setFullScreenVideoSrc(partnerData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, partnerData.fullScreenVideoSrc]);
@@ -58,6 +56,7 @@ export default function RedBullRacing() {
         productsMt={partnerData.productsMt}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
+        posterSrc={partnerData.posterSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>

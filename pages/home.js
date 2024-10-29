@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useState } from 'react';
 
 const buttonImages = [
   { image: '/images/hagerty-home.png', link: '/hagerty/' },
@@ -12,6 +13,12 @@ const buttonImages = [
 ];
 
 export default function Home() {
+  const [loaded, setLoaded] = useState({});
+
+  const handleImageLoad = (index) => {
+    setLoaded((prev) => ({ ...prev, [index]: true }));
+  };
+
   return (
     <div className="relative flex flex-col min-h-screen">
       {/* Background Video */}
@@ -20,8 +27,7 @@ export default function Home() {
         loop
         muted
         playsInline
-        preload="auto"
-        poster="/images/menu-first-frame.png"
+        poster="/video-posters/menu-preview-poster.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1, aspectRatio: "16/9" }}
       >
@@ -50,6 +56,9 @@ export default function Home() {
             <Link key={index} href={button.link} passHref>
               <img
                 src={button.image}
+                onLoad={() => handleImageLoad(index)}
+                data-loaded={loaded[index] ? 'true' : 'false'}
+                className="menu-button-image"
                 style={{ width: '40vw', height: 'auto', objectFit: 'contain' }}
               />
             </Link>

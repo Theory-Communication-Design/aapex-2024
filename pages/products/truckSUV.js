@@ -31,15 +31,14 @@ export default function TruckSUV() {
     button2Href: '/oem/toyota',
     buttonsMt: '7vw',
     videoSrc: '/videos/truckSUV-preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    posterSrc: '/video-posters/truckSUV-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/truckSUV-video.mp4'
   };
 
-  // Set the fullScreenVideoSrc when this page is loaded
   useEffect(() => {
     setFullScreenVideoSrc(productData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
@@ -63,6 +62,7 @@ export default function TruckSUV() {
         button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
+        posterSrc={productData.posterSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>

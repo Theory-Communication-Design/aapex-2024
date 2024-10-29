@@ -29,16 +29,15 @@ export default function AdvancedFuelEconomy() {
     button1: '/images/toyota-button1.png',
     button1Href: '/oem/toyota',
     buttonsMt: '6.5vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/advanced-preview.mp4',
+    posterSrc: '/video-posters/advanced-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/advanced-video.mp4'
   };
 
-  // Set the fullScreenVideoSrc when this page is loaded
   useEffect(() => {
     setFullScreenVideoSrc(productData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
@@ -60,6 +59,7 @@ export default function AdvancedFuelEconomy() {
         button1Href={productData.button1Href}
         buttonsMt={productData.buttonsMt}
         videoSrc={productData.videoSrc}
+        posterSrc={productData.posterSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>

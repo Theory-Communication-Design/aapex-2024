@@ -29,8 +29,9 @@ export default function Steer() {
     ],
     productsMt: '0.2vw',
     subheaderTop: '4vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/steer-preview.mp4',
+    posterSrc: '/video-posters/steer-preview-poster.jpg', // Add posterSrc here
+    fullScreenVideoSrc: '/videos/steer-video.mp4'
   };
 
   // Get the context to update fullScreenVideoSrc state
@@ -60,6 +61,7 @@ export default function Steer() {
         productsMt={partnerData.productsMt}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
+        posterSrc={partnerData.posterSrc} // Pass posterSrc as a prop
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>

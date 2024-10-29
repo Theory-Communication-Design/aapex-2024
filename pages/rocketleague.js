@@ -27,19 +27,17 @@ export default function RocketLeague() {
     ],
     productsMt: '-0.4vw',
     subheaderTop: '3vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/rocketLeague-preview.mp4',
+    posterSrc: '/video-posters/rocketLeague-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/rocketLeague-video.mp4'
   };
 
-  // Get the context to update fullScreenVideoSrc state
   const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
   useEffect(() => {
-    // Update the fullScreenVideoSrc when this page is loaded
     setFullScreenVideoSrc(partnerData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, partnerData.fullScreenVideoSrc]);
@@ -57,6 +55,7 @@ export default function RocketLeague() {
         productsMt={partnerData.productsMt}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
+        posterSrc={partnerData.posterSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>

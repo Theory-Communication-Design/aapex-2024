@@ -19,6 +19,9 @@ const PartnerPage = ({
   const fullScreenVideoRef = useRef(null);
   const { setFullScreenVideoSrc } = useContext(UserActivityContext);
 
+  // Dynamically set the poster image based on video source
+  const posterSrc = `/video-posters/${videoSrc.split('/').pop().replace('.mp4', '')}-poster.jpg`;
+
   const handlePlayClick = () => {
     setIsModalOpen(true);
     setFullScreenVideoSrc(fullScreenVideoSrc);
@@ -33,7 +36,6 @@ const PartnerPage = ({
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setFullScreenVideoSrc(null);
-
     window.dispatchEvent(new Event('mousemove'));
 
     if (fullScreenVideoRef.current) {
@@ -90,13 +92,13 @@ const PartnerPage = ({
 
       {/* Right Side - Video */}
       <div className="absolute right-0 h-full">
-        {/* Background looping video */}
+        {/* Background looping video with poster */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          preload="auto"
+          poster={posterSrc} // Use dynamic poster for initial load
           className="w-full h-full object-cover"
         >
           <source src={videoSrc} type="video/mp4" />

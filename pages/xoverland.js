@@ -29,8 +29,9 @@ export default function XOverland() {
     ],
     productsMt: '-1vw',
     subheaderTop: '3vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/xoverland-preview.mp4',
+    posterSrc: '/video-posters/xoverland-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/xoverland-video.mp4'
   };
 
   // Get the context to update fullScreenVideoSrc state
@@ -59,6 +60,7 @@ export default function XOverland() {
         productsMt={partnerData.productsMt}
         subheaderTop={partnerData.subheaderTop}
         videoSrc={partnerData.videoSrc}
+        posterSrc={partnerData.posterSrc}
         fullScreenVideoSrc={partnerData.fullScreenVideoSrc}
       />
     </div>

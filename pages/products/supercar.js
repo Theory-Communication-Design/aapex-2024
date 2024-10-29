@@ -28,16 +28,15 @@ export default function Supercar() {
     button1: '/images/gm-button.png',
     button1Href: '/oem/generalMotors',
     buttonsMt: '7vw',
-    videoSrc: '/videos/preview.mp4',
-    fullScreenVideoSrc: '/videos/testVideo.mp4'
+    videoSrc: '/videos/supercar-preview.mp4',
+    posterSrc: '/video-posters/supercar-preview-poster.jpg',
+    fullScreenVideoSrc: '/videos/supercar-video.mp4'
   };
 
-  // Set the fullScreenVideoSrc when this page is loaded
   useEffect(() => {
     setFullScreenVideoSrc(productData.fullScreenVideoSrc);
 
     return () => {
-      // Reset fullScreenVideoSrc when leaving the page
       setFullScreenVideoSrc(null);
     };
   }, [setFullScreenVideoSrc, productData.fullScreenVideoSrc]);
@@ -56,12 +55,10 @@ export default function Supercar() {
         viscosityMt={productData.viscosityMt}
         sectionMt={productData.sectionMt}
         button1={productData.button1}
-        button2={productData.button2}
         button1Href={productData.button1Href}
-        button2Href={productData.button2Href}
         buttonsMt={productData.buttonsMt}
-        preview={productData.preview}
         videoSrc={productData.videoSrc}
+        posterSrc={productData.posterSrc}
         fullScreenVideoSrc={productData.fullScreenVideoSrc}
       />
     </div>
