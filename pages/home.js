@@ -27,7 +27,7 @@ export default function Home() {
         loop
         muted
         playsInline
-        poster="/video-posters/menu-preview-poster.jpg"
+        poster="/video-posters/menu-poster.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1, aspectRatio: "16/9" }}
       >

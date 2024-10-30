@@ -5,8 +5,9 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Preload videos */}
-        <link rel="preload" href="/videos/landing1.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/videos/lockscreen.mp4" as="video" type="video/mp4" />
         <link rel="preload" href="/videos/menu.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/videos/menu-products.mp4" as="video" type="video/mp4" />
 
         <link rel="preload" href="/videos/toyota-video.mp4" as="video" type="video/mp4" />
         <link rel="preload" href="/videos/hagerty-video.mp4" as="video" type="video/mp4" />
@@ -29,7 +30,8 @@ export default function Document() {
         <link rel="preload" href="/videos/xoverland-video.mp4" as="video" type="video/mp4" />
 
         {/* Preload video poster images */}
-        <link rel="preload" href="/video-posters/menu-preview-poster.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/video-posters/menu-poster.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/video-posters/menu-products-poster.jpg" as="image" type="image/jpeg" />
 
         <link rel="preload" href="/video-posters/toyota-preview-poster.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/video-posters/hagerty-preview-poster.jpg" as="image" type="image/jpeg" />
