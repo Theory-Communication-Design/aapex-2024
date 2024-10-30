@@ -19,21 +19,22 @@ const Header = () => {
   return (
     <div className="bg-white h-[9.4vw] flex items-center w-full z-20 shadow-2xl">
       <div className="ml-[5.5vw] mr-[4vw]">
-        <img
-          src="/images/logo.png"
-          alt="Logo"
-          style={{ width: 'auto', height: '2.7vw' }}
-        />
+        <Link href="/" passHref prefetch={true}>
+          <img
+            src="/images/logo.png"
+            alt="Logo"
+            style={{ width: 'auto', height: '2.7vw' }}
+          />
+        </Link>
       </div>
       <nav className="flex space-x-[1.1vw]">
         {tabs.map((tab, index) => (
           <Link key={index} href={tab.link} passHref prefetch={true}>
             <div
-              className={`w-[7vw] h-[2.7vw] flex justify-center items-center font-emprint text-black cursor-pointer px-[1vw] text-[1vw] text-center leading-[1.2vw] ${
-                router.pathname === tab.link || (tab.name === 'PRODUCTS' && router.pathname.startsWith('/products'))
+              className={`w-[7vw] h-[2.7vw] flex justify-center items-center font-emprint text-black cursor-pointer px-[1vw] text-[1vw] text-center leading-[1.2vw] ${router.pathname === tab.link || (tab.name === 'PRODUCTS' && router.pathname.startsWith('/products'))
                   ? 'bg-[#b0976b] text-white'
                   : 'bg-[#e1e1e1]'
-              }`}
+                }`}
             >
               {tab.name}
             </div>

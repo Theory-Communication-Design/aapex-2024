@@ -32,6 +32,7 @@ export default function Document() {
         {/* Preload video poster images */}
         <link rel="preload" href="/video-posters/menu-poster.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/video-posters/menu-products-poster.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/video-posters/lockscreen-poster.jpg" as="image" type="image/jpeg" />
 
         <link rel="preload" href="/video-posters/toyota-preview-poster.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/video-posters/hagerty-preview-poster.jpg" as="image" type="image/jpeg" />

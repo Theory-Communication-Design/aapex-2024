@@ -26,7 +26,7 @@ export default function ClassicCar() {
     sectionMt: '4vw',
     button1: '/images/hagerty-button.png',
     button1Href: '/hagerty',
-    buttonsMt: '7vw',
+    buttonsMt: '7.5vw',
     videoSrc: '/videos/classicCar-preview.mp4',
     posterSrc: '/video-posters/classicCar-preview-poster.jpg',
     fullScreenVideoSrc: '/videos/classicCar-video.mp4'

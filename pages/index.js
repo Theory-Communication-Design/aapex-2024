@@ -9,6 +9,7 @@ export default function Landing() {
         loop
         muted
         playsInline
+        poster="/video-posters/lockscreen-poster.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1, aspectRatio: "16/9" }}
       >

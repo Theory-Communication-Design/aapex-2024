@@ -34,14 +34,18 @@ export default function Home() {
         <source src="/videos/menu.mp4" type="video/mp4" />
       </video>
 
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-15" style={{ zIndex: -1 }} />
+
       {/* Top Bar */}
       <div className="relative z-10 bg-white h-[9.4vw] flex justify-center items-center w-full shadow-md">
-        <img
-          src="/images/logo.png"
-          alt="Logo"
-          className="w-auto"
-          style={{ height: '5vh' }}
-        />
+        <Link href="/" passHref prefetch={true}>
+          <img
+            src="/images/logo.png"
+            alt="Logo"
+            className="w-auto"
+            style={{ height: '5vh' }}
+          />
+        </Link>
       </div>
 
       {/* Content Section */}
