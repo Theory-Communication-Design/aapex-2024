@@ -13,7 +13,7 @@ const PartnerPage = ({
   productsMt,
   subheaderTop,
   videoSrc,
-  posterSrc, // Passed poster prop
+  posterSrc,
   fullScreenVideoSrc
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);

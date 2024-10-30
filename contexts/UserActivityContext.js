@@ -22,7 +22,7 @@ export const UserActivityProvider = ({ children }) => {
       }
     };
 
-    const events = ['click', 'mousemove', 'keypress', 'scroll'];
+    const events = ['click'];
     events.forEach((event) => window.addEventListener(event, resetActivityTimer));
 
     const intervalId = setInterval(handleInactivity, 1000);
