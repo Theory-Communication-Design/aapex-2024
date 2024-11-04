@@ -12,6 +12,7 @@ export default function Landing() {
         poster="/video-posters/lockscreen-poster.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1, aspectRatio: "16/9" }}
+        onEnded={(e) => e.target.play()}
       >
         <source src="./videos/lockscreen.mp4" type="video/mp4" />
         Your browser does not support the video tag.
