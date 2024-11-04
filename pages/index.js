@@ -26,9 +26,8 @@ export default function Landing() {
     <div className="relative flex flex-col items-center min-h-screen text-white pt-20">
       {/* Background Video */}
       <video
-        key={videoSrc} // Ensure React re-renders video on source change
+        key={videoSrc}
         autoPlay
-        loop={videoSrc === './videos/lockscreen-part2.mp4'} // Only loop on final segment
         muted
         playsInline
         preload="metadata" // Load only metadata initially
