@@ -1,49 +1,42 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Landing() {
+  const [videoSrc, setVideoSrc] = useState('./videos/lockscreen-part1.mp4');
+
   useEffect(() => {
     const videoElement = document.querySelector('video');
 
-    const handleVideoPlay = () => {
-      // Check if video is paused or ended and attempt to play it
-      if (videoElement.paused || videoElement.ended) {
-        videoElement.play().catch(error => {
-          console.error('Error playing video:', error);
-        });
+    const handleVideoEnded = () => {
+      if (videoSrc === './videos/lockscreen-part1.mp4') {
+        setVideoSrc('./videos/lockscreen-part2.mp4');
+      } else {
+        setVideoSrc('./videos/lockscreen-part1.mp4');
       }
     };
 
-    const onCanPlayThrough = () => {
-      // Video can play through without stopping, ensure it starts
-      handleVideoPlay();
-    };
-
-    videoElement.addEventListener('canplaythrough', onCanPlayThrough);
-    videoElement.addEventListener('playing', handleVideoPlay);
-    videoElement.addEventListener('pause', handleVideoPlay);
+    videoElement.addEventListener('ended', handleVideoEnded);
 
     return () => {
-      videoElement.removeEventListener('canplaythrough', onCanPlayThrough);
-      videoElement.removeEventListener('playing', handleVideoPlay);
-      videoElement.removeEventListener('pause', handleVideoPlay);
+      videoElement.removeEventListener('ended', handleVideoEnded);
     };
-  }, []);
+  }, [videoSrc]);
 
   return (
     <div className="relative flex flex-col items-center min-h-screen text-white pt-20">
       {/* Background Video */}
       <video
+        key={videoSrc} // Ensure React re-renders video on source change
         autoPlay
-        loop
+        loop={videoSrc === './videos/lockscreen-part2.mp4'} // Only loop on final segment
         muted
         playsInline
-        preload="auto"
+        preload="metadata" // Load only metadata initially
         poster="/video-posters/lockscreen-poster.jpg"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ zIndex: -1, aspectRatio: "16/9" }}
       >
-        <source src="./videos/lockscreen.mp4" type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

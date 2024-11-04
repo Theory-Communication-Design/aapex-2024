@@ -5,7 +5,9 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Preload videos */}
-        <link rel="preload" href="/videos/lockscreen.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/videos/lockscreen-part1.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/videos/lockscreen-part2.mp4" as="video" type="video/mp4" />
+
         <link rel="preload" href="/videos/menu.mp4" as="video" type="video/mp4" />
         <link rel="preload" href="/videos/menu-products.mp4" as="video" type="video/mp4" />
 
