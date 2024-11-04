@@ -5,16 +5,28 @@ export default function Landing() {
   useEffect(() => {
     const videoElement = document.querySelector('video');
 
-    const handlePlayback = () => {
+    const handleVideoPlay = () => {
+      // Check if video is paused or ended and attempt to play it
       if (videoElement.paused || videoElement.ended) {
-        videoElement.play();
+        videoElement.play().catch(error => {
+          console.error('Error playing video:', error);
+        });
       }
     };
 
-    videoElement.addEventListener('timeupdate', handlePlayback);
+    const onCanPlayThrough = () => {
+      // Video can play through without stopping, ensure it starts
+      handleVideoPlay();
+    };
+
+    videoElement.addEventListener('canplaythrough', onCanPlayThrough);
+    videoElement.addEventListener('playing', handleVideoPlay);
+    videoElement.addEventListener('pause', handleVideoPlay);
 
     return () => {
-      videoElement.removeEventListener('timeupdate', handlePlayback);
+      videoElement.removeEventListener('canplaythrough', onCanPlayThrough);
+      videoElement.removeEventListener('playing', handleVideoPlay);
+      videoElement.removeEventListener('pause', handleVideoPlay);
     };
   }, []);
 
